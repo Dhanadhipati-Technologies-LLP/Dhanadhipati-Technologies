@@ -1,132 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dhanadhipati Technologies LLP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at top left, #0a0f0f, #001a1a);
-      color: #f5f5f5;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(to bottom right, #0a0f1f, #1a73e8);
+      color: white;
       overflow-x: hidden;
     }
 
     header {
-      text-align: center;
-      padding: 70px 20px;
-      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 40px;
+      background: rgba(0, 0, 0, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
     }
 
     /* Logo Animation */
     .logo {
-      font-size: 64px;
+      font-size: 1.8em;
+      font-weight: bold;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-symbol {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: conic-gradient(from 0deg, #1a73e8, #00c9a7, #1a73e8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
       font-weight: 700;
-      display: inline-block;
-      background: linear-gradient(135deg, #d4af37, #2ecc71);
+      animation: spin 6s linear infinite;
+    }
+
+    .logo-symbol span {
+      background: white;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: pulse 3s infinite alternate;
-      letter-spacing: 4px;
     }
 
-    @keyframes pulse {
-      0% { transform: scale(1); filter: drop-shadow(0 0 10px #2ecc71); }
-      100% { transform: scale(1.1); filter: drop-shadow(0 0 20px #d4af37); }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
 
-    nav {
-      margin-top: 30px;
-    }
     nav a {
-      color: #f5f5f5;
-      text-decoration: none;
       margin: 0 15px;
-      font-weight: 600;
-      transition: color 0.3s;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
     }
+
     nav a:hover {
-      color: #2ecc71;
+      color: #00c9a7;
     }
 
-    section {
+    main {
       text-align: center;
-      margin: 60px auto;
-      max-width: 800px;
-      padding: 20px;
+      padding: 120px 20px;
+      animation: fadeIn 1s ease-in;
     }
 
-    section h2 {
-      color: #d4af37;
-      margin-bottom: 20px;
-      font-size: 2rem;
+    main h1 {
+      font-size: 3em;
+      font-weight: 700;
+      letter-spacing: 1px;
+      animation: slideIn 1s ease-out;
     }
 
-    section p {
-      color: #c9c9c9;
-      font-size: 1.1rem;
-      line-height: 1.6;
+    main p {
+      margin-top: 20px;
+      font-size: 1.2em;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #cfe1ff;
     }
 
     footer {
       text-align: center;
-      padding: 30px;
-      background: #001010;
-      color: #888;
+      padding: 30px 0;
+      background: rgba(255, 255, 255, 0.1);
       font-size: 14px;
-      border-top: 1px solid #2ecc71;
-      margin-top: 80px;
+      color: #ddd;
     }
 
-    /* Scroll Animation */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 1.2s ease, transform 1.2s ease;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">DT</div>
-    <h1 style="margin-top:15px;">Dhanadhipati Technologies LLP</h1>
-    <p style="color:#bbb; margin-top:10px;">Empowering innovation through technology, creativity & purpose.</p>
+    <div class="logo">
+      <div class="logo-symbol"><span>DT</span></div>
+      Dhanadhipati Technologies
+    </div>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="privacy.html">Privacy</a>
+      <a href="account-deletion.html">Account</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section class="fade-in">
-    <h2>Our Flagship Product</h2>
-    <p><strong>Ludo Wordo</strong> — a one-of-a-kind educational game merging Ludo mechanics with English vocabulary learning. Fun, competitive, and empowering for learners of all ages.</p>
-  </section>
-
-  <section class="fade-in">
-    <h2>Our Vision</h2>
-    <p>To redefine learning and engagement through immersive, accessible, and innovative digital solutions designed for every individual.</p>
-  </section>
+  <main>
+    <h1>Welcome to Dhanadhipati Technologies LLP</h1>
+    <p>Innovating for education and empowerment through intelligent digital products like <strong>Ludo Wordo</strong>.</p>
+  </main>
 
   <footer>
-    © 2025 Dhanadhipati Technologies LLP | All Rights Reserved
+    © 2025 Dhanadhipati Technologies LLP
   </footer>
-
-  <script>
-    const fadeEls = document.querySelectorAll('.fade-in');
-    window.addEventListener('scroll', () => {
-      fadeEls.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) el.classList.add('visible');
-      });
-    });
-  </script>
 </body>
 </html>
