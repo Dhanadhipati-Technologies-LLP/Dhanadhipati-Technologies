@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dhanadhipati Technologies LLP</title>
+  <meta name="description" content="Dhanadhipati Technologies LLP — Play. Learn. Win the Word. Innovative tech for education and games."/>
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --muted:#9aa6b2;
+      --accent:#00b4d8;
+      --accent-2:#7c3aed;
+      --glass: rgba(255,255,255,0.03);
+      --glass-2: rgba(255,255,255,0.02);
+      --radius:14px;
+      --maxw:1100px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,var(--bg),#071026); color:#e6eef6; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+    .container{max-width:var(--maxw); margin:36px auto; padding:28px}
+
+    /* header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;box-shadow:0 6px 24px rgba(12,18,30,0.6)}
+    .brand h1{font-size:18px;margin:0}
+    nav{display:flex;gap:12px;align-items:center}
+    a.navlink{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:10px;font-weight:600}
+    a.navlink.active, a.navlink:hover{background:var(--glass); color:#fff}
+
+    /* hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;margin-top:26px}
+    .panel{background:linear-gradient(180deg,var(--card),#051024);padding:26px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    .hero h2{margin:0 0 12px 0;font-size:28px}
+    .muted{color:var(--muted)}
+
+    .cta{display:flex;gap:12px;margin-top:16px}
+    .btn{background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:10px 14px;border-radius:10px;color:#00121a;font-weight:700;border:none;cursor:pointer}
+    .btn.ghost{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.04)}
+
+    /* features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .feature{padding:14px;border-radius:12px;background:var(--glass-2);border:1px solid rgba(255,255,255,0.02)}
+    .feature h4{margin:6px 0 0 0}
+    .feature p{margin:6px 0 0 0;color:var(--muted);font-size:14px}
+
+    /* content pages */
+    main.content{margin-top:20px}
+    section.page{display:none}
+    section.page.active{display:block}
+    .card{padding:20px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid rgba(255,255,255,0.03)}
+    h3{margin-top:0}
+
+    /* product layout */
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    ul.clean{padding-left:18px}
+
+    /* footer */
+    footer{margin-top:26px;display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .two-col{grid-template-columns:1fr}
+      nav{display:none}
+      header{gap:8px}
+      .mobile-nav{display:flex;gap:8px}
+    }
+
+    /* subtle utilities */
+    .small{font-size:13px;color:var(--muted)}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.02);font-weight:700}
+    .code{background:#071226;padding:6px 8px;border-radius:8px;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, monospace}
+
+    /* contact form */
+    form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    form input, form textarea{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    form button{margin-top:10px}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">DW</div>
+        <div>
+          <h1>Dhanadhipati Technologies LLP</h1>
+          <div class="small">Innovation | Education | Games</div>
+        </div>
+      </div>
+
+      <nav aria-label="Primary">
+        <a href="#home" class="navlink" data-target="home">Home</a>
+        <a href="#about" class="navlink" data-target="about">About Us</a>
+        <a href="#products" class="navlink" data-target="products">Products</a>
+        <a href="#account-deletion" class="navlink" data-target="account-deletion">Account Deletion</a>
+        <a href="#privacy" class="navlink" data-target="privacy">Privacy Policy</a>
+        <a href="#contact" class="navlink" data-target="contact">Contact</a>
+      </nav>
+
+      <div class="mobile-nav">
+        <button class="btn" onclick="navigate('contact')">Contact</button>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div>
+        <div class="panel">
+          <h2>Dhanadhipati Technologies LLP</h2>
+          <p class="muted">We build intelligent, engaging and scalable solutions that bring technology closer to humanity. From digital learning to entertainment — we create products that transform lives.</p>
+          <div class="cta">
+            <button class="btn" onclick="navigate('products')">Explore Ludo Wordo</button>
+            <button class="btn ghost" onclick="navigate('about')">About the Company</button>
+          </div>
+
+          <div class="features" style="margin-top:18px">
+            <div class="feature">
+              <strong>Flagship</strong>
+              <h4>Ludo Wordo</h4>
+              <p>Game-based language learning — play Ludo, learn vocabulary, and win rewards.</p>
+            </div>
+            <div class="feature">
+              <strong>Expertise</strong>
+              <h4>Games & Learning</h4>
+              <p>Educational design, multiplayer architecture, and analytics-driven content.</p>
+            </div>
+            <div class="feature">
+              <strong>Contact</strong>
+              <h4>Business & Support</h4>
+              <p class="small">cs.dhanadhipatitechnologies@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="panel">
+          <h4 class="small">Quick Info</h4>
+          <div style="margin-top:12px">
+            <div class="pill">Location: Vijayawada, Andhra Pradesh</div>
+            <div style="height:10px"></div>
+            <div class="small">Legal: Dhanadhipati Technologies LLP</div>
+            <div style="height:8px"></div>
+            <div class="small">Email: <a href="mailto:cs.dhanadhipatitechnologies@gmail.com">cs.dhanadhipatitechnologies@gmail.com</a></div>
+          </div>
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:14px 0">
+          <div class="small">Use the navigation above to view: About, Products, Privacy Policy, Account Deletion & Contact.</div>
+        </div>
+      </div>
+    </div>
+
+    <main class="content">
+
+      <!-- HOME -->
+      <section id="home" class="page active">
+        <div class="card">
+          <h3>Welcome to Dhanadhipati Technologies</h3>
+          <p class="muted">We create technology with purpose. Browse our flagship product Ludo Wordo, learn about the company, or get in touch.</p>
+
+          <div style="margin-top:16px;" class="two-col">
+            <div>
+              <h4>What we do</h4>
+              <p class="muted">We design intelligent, engaging and scalable solutions that bring technology closer to humanity — from digital learning to entertainment.</p>
+
+              <h4 style="margin-top:14px">Core Values</h4>
+              <ul class="clean">
+                <li>Impact-driven innovation</li>
+                <li>Human-centred design</li>
+                <li>Quality engineering</li>
+                <li>Transparency & trust</li>
+              </ul>
+            </div>
+
+            <aside>
+              <div class="card" style="padding:14px;">
+                <div class="small">Legal & Contact</div>
+                <div style="height:8px"></div>
+                <div class="code">Dhanadhipati Technologies LLP</div>
+                <div style="height:6px"></div>
+                <div class="small">Vijayawada, Andhra Pradesh, India</div>
+                <div style="height:6px"></div>
+                <div class="small">Email: <a href="mailto:cs.dhanadhipatitechnologies@gmail.com">cs.dhanadhipatitechnologies@gmail.com</a></div>
+              </div>
+            </aside>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="page">
+        <div class="card">
+          <h3>About Us — Where Innovation Finds Its Purpose</h3>
+          <p class="muted">Dhanadhipati Technologies LLP is a next-generation technology company driven by one belief — that innovation must solve real problems and create real impact.</p>
+
+          <div style="margin-top:12px">
+            <p>We design intelligent, engaging, and scalable solutions that bring technology closer to humanity. From digital learning to entertainment, we merge creativity, logic, and empathy to build products that don’t just function — they transform lives.</p>
+
+            <h4>Our flagship innovation</h4>
+            <p><strong>Ludo Wordo</strong> is a revolutionary game-based language learning platform that makes learning fun, social, and smart. It turns the classic Ludo into a language adventure — where every move sharpens the mind, every step builds vocabulary, and every win boosts confidence.</p>
+
+            <blockquote style="margin:12px 0;padding:12px;border-left:4px solid rgba(255,255,255,0.04);color:var(--muted)">“Play. Learn. Win the Word!” — At Dhanadhipati, we don’t just code — we create change.</blockquote>
+
+            <h4>Our Mission</h4>
+            <p>To create innovative, impactful, and inclusive technology solutions that address real-world challenges and enhance everyday lives. We aim to fuse education, entertainment, and empowerment through smart digital experiences that are meaningful, memorable, and measurable.</p>
+
+            <h4>Our Vision</h4>
+            <p>To become a global leader in purposeful technology, crafting platforms that educate, engage, and empower people everywhere. We envision a world where technology is not just a tool — but a teacher, companion, and catalyst for growth.</p>
+
+            <p class="small">"Innovation with Intention. Technology with a Heart."</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTS -->
+      <section id="products" class="page">
+        <div class="card">
+          <h3>Ludo Wordo — Play Ludo. Gain Wordo.</h3>
+          <p class="muted">Where letters become your weapons, words become your victories, and learning becomes your superpower.</p>
+
+          <div style="margin-top:12px" class="two-col">
+            <div>
+              <h4>The Problem We’re Solving</h4>
+              <p>Language learning today feels like a chore — repetitive, dull, and disconnected from real life. Millions of learners — especially students, illiterates, and competitive exam aspirants — struggle to build spelling, vocabulary, and pronunciation skills because traditional methods fail to engage and motivate them.</p>
+
+              <h4>Our Solution — Learning That Feels Like Play</h4>
+              <p>Ludo Wordo transforms the classic Ludo board into a language battlefield where every dice roll leads to learning. Players are given words with missing alphabets, and as they move their tokens across the board, they collect letters, complete words, and build vocabulary — all while playing a thrilling strategy game.</p>
+
+              <h4>How to Play</h4>
+              <ol>
+                <li>Join a Room: Choose between 2-player or 4-player mode.</li>
+                <li>Get Your Word: Each player receives a word with missing letters.</li>
+                <li>Roll the Dice: Move your tokens strategically to land on the tiles showing the letters you need.</li>
+                <li>Collect & Complete: Gather the correct alphabets to finish your word first.</li>
+                <li>Win Rewards: Earn coins, trophies, and word power — your “House of Words” grows stronger with every victory!</li>
+              </ol>
+
+              <h4>Key Features</h4>
+              <ul>
+                <li>Real-Time Multiplayer</li>
+                <li>Language Learning Engine</li>
+                <li>Coin & Reward System</li>
+                <li>Educational Word Packs</li>
+                <li>Daily rewards and Spin wheel</li>
+              </ul>
+
+            </div>
+
+            <aside>
+              <div class="card">
+                <h4>Quick Facts</h4>
+                <p class="small">Free-to-play • 2 & 4 player rooms • Multiplayer via Nakama</p>
+                <div style="height:8px"></div>
+                <a class="navlink" href="#contact" onclick="navigate('contact')">Request Demo / Business Enquiry</a>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- PRIVACY -->
+      <section id="privacy" class="page">
+        <div class="card">
+          <h3>Privacy Policy</h3>
+          <ol>
+            <li><strong>Introduction</strong>
+              <p class="muted">Welcome to Ludo Wordo, an educational mobile game developed by Dhanadhipati Technologies LLP, Andhra Pradesh, India. This Privacy Policy explains how we collect, use, and protect your data while using our services.</p>
+            </li>
+            <li><strong>Information We Collect</strong>
+              <p class="muted">Personal details (name, profile, email, etc.)<br>Device and app usage data<br>In-game activity and communication logs<br>Analytics and ad data (via AdMob, Firebase, IronSource, etc.)</p>
+            </li>
+            <li><strong>How We Use Information</strong>
+              <p class="muted">Provide and improve gameplay<br>Personalize educational content<br>Serve relevant ads and offers<br>Ensure security and prevent misuse</p>
+            </li>
+            <li><strong>Data Deletion</strong>
+              <p class="muted">To delete your data, email <a href="mailto:cs.dhanadhipatitechnologies@gmail.com">cs.dhanadhipatitechnologies@gmail.com</a>.</p>
+            </li>
+            <li><strong>Contact</strong>
+              <p class="muted">Dhanadhipati Technologies LLP<br>Vijayawada, Andhra Pradesh, India</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ACCOUNT DELETION -->
+      <section id="account-deletion" class="page">
+        <div class="card">
+          <h3>Account Deletion</h3>
+          <p>If you wish to permanently delete your account or personal data associated with Ludo Wordo, please send an email to:</p>
+          <p class="code">cs.dhanadhipatitechnologies@gmail.com</p>
+
+          <h4>Include the following details:</h4>
+          <ul>
+            <li>Registered username or user ID</li>
+            <li>Registered email address</li>
+            <li>Subject: Account Deletion Request</li>
+          </ul>
+
+          <h4>What Happens Next</h4>
+          <ul>
+            <li>Verification of your identity</li>
+            <li>Account deletion within 7 business days</li>
+            <li>Confirmation email sent after deletion</li>
+          </ul>
+
+          <p class="muted"><strong>Important:</strong> Deleted accounts cannot be recovered. If you used Google/Facebook login, send request from same email. Some financial records may be retained as per law.</p>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="page">
+        <div class="card">
+          <h3>Contact Us</h3>
+          <p class="muted">We’d love to hear from you! For any support, feedback, or business inquiries, reach us at:</p>
+          <p class="code">cs.dhanadhipatitechnologies@gmail.com</p>
+
+          <h4 style="margin-top:12px">Send a message</h4>
+          <form onsubmit="event.preventDefault(); alert('Message simulated — replace with your backend form handler (Netlify/Forms/Server)'); this.reset();">
+            <div class="row">
+              <input name="name" placeholder="Your name" required />
+              <input name="email" placeholder="Email address" type="email" required />
+            </div>
+            <input name="subject" placeholder="Subject" required />
+            <textarea name="message" rows="6" placeholder="Message" required></textarea>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© "Dhanadhipati Technologies LLP" — All rights reserved</div>
+      <div class="small">Built for Ludo Wordo • <a href="#privacy" onclick="navigate('privacy')">Privacy Policy</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // simple router
+    function navigate(page){
+      const pages = document.querySelectorAll('section.page');
+      pages.forEach(p=>p.classList.remove('active'));
+      const target = document.getElementById(page);
+      if(target) target.classList.add('active');
+      // update nav active state
+      document.querySelectorAll('a.navlink').forEach(a=>{
+        a.classList.toggle('active', a.dataset.target === page);
+      });
+      // update hash
+      history.replaceState(null,'', '#' + page);
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+
+    // link clicks
+    document.querySelectorAll('a.navlink').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        navigate(a.dataset.target);
+      })
+    });
+
+    // initial route from hash
+    (function(){
+      const hash = (location.hash||'#home').replace('#','');
+      navigate(hash||'home');
+    })();
+  </script>
+</body>
+</html>
