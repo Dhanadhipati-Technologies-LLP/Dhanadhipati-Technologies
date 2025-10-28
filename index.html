@@ -15,135 +15,128 @@
   <title>Dhanadhipati Technologies LLP</title>
   <meta name="description" content="Dhanadhipati Technologies LLP - Innovating to solve real-world problems through technology. Creators of Ludo Wordo.">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
   <style>
-    /* ===== GENERAL PAGE STYLE ===== */
+    /* ---------- GLOBAL STYLES ---------- */
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      color: #ffffff;
-      background: linear-gradient(135deg, #001f4d 0%, #007bff 100%);
+      color: #fff;
+      background: linear-gradient(135deg, #002b80 0%, #007bff 100%);
       background-attachment: fixed;
-      text-align: center;
       overflow-x: hidden;
     }
 
     header {
-      padding: 70px 20px 20px;
+      text-align: center;
+      padding: 80px 20px 40px;
     }
 
     h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+      font-size: 2.8em;
+      margin: 0;
       color: #fff;
-      text-shadow: 0 0 10px rgba(255,255,255,0.3);
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px rgba(255,255,255,0.2);
     }
 
-    .tagline {
-      font-size: 1.2em;
+    h2 {
       color: #ffe44d;
-      margin-bottom: 40px;
-      font-weight: 500;
+      font-size: 1.8em;
+      margin-top: 40px;
+      text-shadow: 0 0 10px rgba(255,255,255,0.15);
     }
 
+    p {
+      font-size: 1.1em;
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.6em;
+      color: #f0f0f0;
+    }
+
+    /* ---------- BUTTONS & LINKS ---------- */
+    a {
+      color: #ffe44d;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    /* ---------- NAVIGATION ---------- */
     nav {
-      margin-bottom: 40px;
+      margin-top: 30px;
     }
 
     nav a {
-      color: #fff;
+      margin: 0 15px;
+      font-size: 1.05em;
+    }
+
+    /* ---------- PRODUCT SECTION ---------- */
+    .product {
       background: rgba(255,255,255,0.1);
       border-radius: 20px;
-      padding: 8px 18px;
-      margin: 0 8px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      background: #ffe44d;
-      color: #003366;
-    }
-
-    /* ===== PRODUCT CARD ===== */
-    .product {
-      background: rgba(255,255,255,0.12);
-      margin: 40px auto;
       padding: 40px 20px;
-      border-radius: 25px;
       max-width: 900px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.25);
-      animation: fadeIn 1.5s ease-in-out;
+      margin: 60px auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
     }
 
-    .product img {
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .logo {
       width: 120px;
       height: 120px;
-      border-radius: 20px;
-      margin-bottom: 20px;
-      border: 3px solid #ffe44d;
+      margin: 0 auto 20px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/4/43/Blue_Ludo_board.svg') no-repeat center/contain;
     }
 
-    .product h2 {
-      font-size: 2em;
-      color: #ffe44d;
-      margin-bottom: 15px;
-    }
-
-    .product p {
-      font-size: 1.1em;
-      line-height: 1.6em;
-      color: #f3f7ff;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .highlight {
-      color: #ffe44d;
-      font-weight: 600;
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      background: rgba(0,0,0,0.25);
-      padding: 20px;
-      margin-top: 50px;
-      font-size: 0.95em;
-    }
-
-    footer a {
-      color: #ffe44d;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    footer a:hover {
+    .tagline {
       color: #fff;
+      font-size: 1.2em;
+      font-style: italic;
+      margin-bottom: 10px;
     }
 
-    /* ===== ANIMATIONS ===== */
+    footer {
+      margin-top: 60px;
+      background: rgba(0,0,0,0.2);
+      padding: 25px;
+      font-size: 0.9em;
+    }
+
+    /* ---------- ANIMATIONS ---------- */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* ===== RESPONSIVE ===== */
+    header, .product, footer {
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
     @media (max-width: 600px) {
       h1 { font-size: 2em; }
-      .product h2 { font-size: 1.5em; }
-      .product p { font-size: 1em; }
-      nav a { display: inline-block; margin: 5px; }
+      p { font-size: 1em; }
+      nav a { display: block; margin: 10px 0; }
     }
   </style>
-</head>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
 <body>
   <header>
     <h1>Dhanadhipati Technologies LLP</h1>
-    <div class="tagline">Innovating with Purpose • Building Games that Educate</div>
+    <p class="tagline">Innovating with Purpose • Building Games that Educate</p>
 
     <nav>
       <a href="about.html">About Us</a>
@@ -154,13 +147,13 @@
   </header>
 
   <section class="product">
-    <!-- 🔹 Replace the below image with your Ludo Wordo logo if available -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Ludo-Board.jpg" alt="Ludo Wordo Logo">
-    <h2>Our Flagship Product: Ludo Wordo</h2>
+    <div class="logo"></div>
+    <h2>Our Flagship Product: <span style="color:#fff;">Ludo Wordo</span></h2>
     <p>
-      <span class="highlight">Play Ludo. Gain Wordo.</span><br><br>
-      Ludo Wordo is not just a game — it’s a playful learning experience that makes English vocabulary fun and addictive.  
-      Compete with friends, collect missing letters, and master new words while rolling your way to victory!
+      <strong>Play Ludo, Learn English, and Challenge Friends Worldwide!</strong><br>
+      <br>
+      <em>Ludo Wordo</em> blends the fun of Ludo with the power of vocabulary learning.
+      Collect missing letters, form words, and win exciting challenges — all while improving your English through play.
     </p>
   </section>
 
