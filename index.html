@@ -43,4 +43,123 @@
       color: #ffe44d;
       font-size: 1.8em;
       margin-top: 40px;
-      text-shadow: 0 0 10p
+      text-shadow: 0 0 10px rgba(255,255,255,0.15);
+    }
+
+    p {
+      font-size: 1.1em;
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.6em;
+      color: #f0f0f0;
+    }
+
+    /* ---------- BUTTONS & LINKS ---------- */
+    a {
+      color: #ffe44d;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    /* ---------- NAVIGATION ---------- */
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-size: 1.05em;
+    }
+
+    /* ---------- PRODUCT SECTION ---------- */
+    .product {
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 60px auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/4/43/Blue_Ludo_board.svg') no-repeat center/contain;
+    }
+
+    .tagline {
+      color: #fff;
+      font-size: 1.2em;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 60px;
+      background: rgba(0,0,0,0.2);
+      padding: 25px;
+      font-size: 0.9em;
+    }
+
+    /* ---------- ANIMATIONS ---------- */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header, .product, footer {
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      p { font-size: 1em; }
+      nav a { display: block; margin: 10px 0; }
+    }
+  </style>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Dhanadhipati Technologies LLP</h1>
+    <p class="tagline">Innovating with Purpose • Building Games that Educate</p>
+
+    <nav>
+      <a href="about.html">About Us</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="account-deletion.html">Account Deletion</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="product">
+    <div class="logo"></div>
+    <h2>Our Flagship Product: <span style="color:#fff;">Ludo Wordo</span></h2>
+    <p>
+      <strong>Play Ludo, Learn English, and Challenge Friends Worldwide!</strong><br>
+      <br>
+      <em>Ludo Wordo</em> blends the fun of Ludo with the power of vocabulary learning.
+      Collect missing letters, form words, and win exciting challenges — all while improving your English through play.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Dhanadhipati Technologies LLP. All Rights Reserved.<br>
+    Contact: <a href="mailto:cs.dhanadhipatitechnologies@gmail.com">cs.dhanadhipatitechnologies@gmail.com</a>
+  </footer>
+</body>
+</html>
