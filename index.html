@@ -1,124 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dhanadhipati Technologies LLP</title>
-  <meta name="description" content="Dhanadhipati Technologies LLP - Innovating to solve real-world problems through technology. Creators of Ludo Wordo.">
-  
   <style>
+    /* ------------------ GLOBAL STYLE ------------------ */
     body {
       margin: 0;
-      font-family: "Poppins", Arial, sans-serif;
-      background: linear-gradient(180deg, #001F3F, #012A57);
+      font-family: "Poppins", sans-serif;
+      background: radial-gradient(circle at top left, #0b0f0e, #000);
       color: #f1f1f1;
-      text-align: center;
       overflow-x: hidden;
     }
 
     header {
-      background-color: rgba(0, 0, 0, 0.25);
-      padding: 40px 20px 60px 20px;
+      text-align: center;
+      padding: 100px 20px 60px;
       position: relative;
     }
 
-    /* === LOGO ANIMATION === */
+    /* ------------------ LOGO ------------------ */
+    .logo {
+      display: inline-block;
+      position: relative;
+      animation: pulse 4s infinite ease-in-out;
+    }
+
     .logo img {
-      width: 220px;
+      width: 180px;
       height: auto;
-      animation: floatGlow 4s ease-in-out infinite;
-      filter: drop-shadow(0 0 15px #d4af37a0);
-      transition: transform 0.3s ease;
+      filter: drop-shadow(0 0 10px rgba(198, 255, 160, 0.6));
+      animation: rotateGlow 6s infinite ease-in-out;
     }
 
-    .logo img:hover {
-      transform: scale(1.05);
+    @keyframes rotateGlow {
+      0% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 10px #c6ffa0); }
+      50% { transform: scale(1.05) rotate(3deg); filter: drop-shadow(0 0 20px #ffd700); }
+      100% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 10px #c6ffa0); }
     }
 
-    @keyframes floatGlow {
-      0%, 100% {
-        transform: translateY(0);
-        filter: drop-shadow(0 0 15px #d4af37a0);
-      }
-      50% {
-        transform: translateY(-10px);
-        filter: drop-shadow(0 0 25px #ffd700);
-      }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.03); opacity: 0.9; }
     }
 
+    /* ------------------ HERO SECTION ------------------ */
     h1 {
-      color: #FFD700;
-      font-size: 2.8em;
-      margin-top: 20px;
+      font-size: 2.8rem;
+      margin: 20px 0 10px;
+      background: linear-gradient(90deg, #d4af37, #32cd32);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+      animation: glowText 3s ease-in-out infinite alternate;
     }
 
-    p {
-      font-size: 1.1em;
+    @keyframes glowText {
+      from { text-shadow: 0 0 5px #32cd32, 0 0 10px #d4af37; }
+      to { text-shadow: 0 0 15px #d4af37, 0 0 25px #32cd32; }
+    }
+
+    p.tagline {
+      font-size: 1.2rem;
+      color: #d4d4d4;
+      margin-bottom: 60px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
       line-height: 1.6;
-      color: #E0E0E0;
-      margin: 0 auto 20px;
-      max-width: 800px;
+      animation: fadeIn 2s ease-in forwards;
     }
 
-    h2 {
-      color: #FFD700;
-      margin-top: 40px;
-      text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    a {
-      color: #FFD700;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
+    /* ------------------ ABOUT SECTION ------------------ */
+    section {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(180deg, #0a0a0a, #001a0f);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
-    a:hover {
-      text-decoration: underline;
+    section h2 {
+      color: #ffd700;
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
+    section p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #ccc;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    /* ------------------ FOOTER ------------------ */
     footer {
-      margin-top: 60px;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.3);
-      color: #bbb;
-      font-size: 0.9em;
+      background: #000;
+      color: #888;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .highlight {
-      color: #FFD700;
-      font-weight: bold;
+    footer a {
+      color: #32cd32;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <!-- 🔹 Line 80: Replace 'DT_logo.png' with your exact file name if different -->
     <div class="logo">
-      <img src="DT_logo.png" alt="Dhanadhipati Technologies LLP Logo">
+      <img src="https://raw.githubusercontent.com/Dhanadhipati-Technologies-LLP/Dhanadhipati-Technologies/main/DT_logo.png" 
+           alt="Dhanadhipati Technologies LLP Logo">
     </div>
     <h1>Dhanadhipati Technologies LLP</h1>
-    <p>Innovating to solve real-world problems through technology, creativity, and purpose.</p>
+    <p class="tagline">
+      Empowering ideas through innovation, technology, and creativity — building solutions that inspire growth and learning.
+    </p>
   </header>
 
-  <main>
-    <h2>Our Flagship Product</h2>
-    <p><span class="highlight">Ludo Wordo</span> — Play Ludo, Learn English, and Challenge Friends Worldwide!<br>
-    A fun and interactive way to improve your vocabulary while enjoying a classic board game experience.</p>
-
+  <section>
+    <h2>About Us</h2>
     <p>
-      <a href="about.html">About Us</a> | 
-      <a href="privacy-policy.html">Privacy Policy</a> | 
-      <a href="account-deletion.html">Account Deletion</a> | 
-      <a href="contact.html">Contact</a>
+      Dhanadhipati Technologies LLP is driven by the belief that technology and creativity
+      can transform education and empower communities. Our flagship product, <b>Ludo Wordo</b>,
+      combines the joy of gaming with the power of language learning — redefining how people
+      learn, play, and grow together.
     </p>
-  </main>
+  </section>
 
   <footer>
-    © 2025 Dhanadhipati Technologies LLP. All Rights Reserved.<br>
-    Contact: <a href="mailto:cs.dhanadhipatitechnologies@gmail.com">cs.dhanadhipatitechnologies@gmail.com</a>
+    © 2025 Dhanadhipati Technologies LLP · All Rights Reserved · 
+    <a href="mailto:contact@dhanadhipati.com">contact@dhanadhipati.com</a>
   </footer>
 </body>
 </html>
