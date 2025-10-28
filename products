@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Products - Dhanadhipati Technologies LLP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="font-family:'Poppins',sans-serif; background:linear-gradient(135deg,#1a1a40,#2a2a72,#009ffd); color:white; text-align:center; padding:60px 20px;">
+  <h1>Our Products</h1>
+  <p style="max-width:700px; margin:20px auto 40px;">Discover our innovative products designed to educate, engage, and empower learners worldwide.</p>
+
+  <div style="background:rgba(255,255,255,0.1); border-radius:20px; padding:40px; max-width:800px; margin:auto; backdrop-filter:blur(10px);">
+    <h2 style="color:#ffd369;">Ludo Wordo</h2>
+    <p><em>Play Ludo. Gain Wordo.</em><br><br>
+    Ludo Wordo is a fun, educational, multiplayer game where players collect letters and form words while playing Ludo. It combines language learning and entertainment like never before!</p>
+  </div>
+
+  <footer style="margin-top:60px; font-size:0.9em; color:#ddd;">
+    © 2025 Dhanadhipati Technologies LLP. All Rights Reserved.
+  </footer>
+</body>
+</html>
