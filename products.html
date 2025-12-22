@@ -1,24 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Products - Dhanadhipati Technologies LLP</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KCT3QZ5BV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3KCT3QZ5BV');
+  </script>
+
+  <meta charset="UTF-8">
+  <title>Products | Dhanadhipati Technologies LLP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Products by Dhanadhipati Technologies LLP including Ludo Wordo educational game">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f6f8fc;
+      color: #222;
+    }
+
+    /* HEADER */
+    header {
+      background: #1e2a5a;
+      padding: 18px 30px;
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 16px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* PAGE CONTENT */
+    .page {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .page h1 {
+      color: #1e2a5a;
+      margin-bottom: 10px;
+    }
+
+    .page p {
+      color: #555;
+      line-height: 1.7;
+      font-size: 15px;
+      max-width: 750px;
+    }
+
+    .product-card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 40px;
+      margin-top: 40px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      max-width: 800px;
+    }
+
+    .product-card h2 {
+      color: #1e2a5a;
+      margin-bottom: 10px;
+    }
+
+    .product-card em {
+      color: #ffb703;
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1e2a5a;
+      color: #ddd;
+      text-align: center;
+      padding: 30px 15px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ffb703;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      nav a {
+        margin-left: 10px;
+        font-size: 13px;
+      }
+    }
+  </style>
 </head>
-<body style="font-family:'Poppins',sans-serif; background:linear-gradient(135deg,#1a1a40,#2a2a72,#009ffd); color:white; text-align:center; padding:60px 20px;">
-  <h1>Our Products</h1>
-  <p style="max-width:700px; margin:20px auto 40px;">Discover our innovative products designed to educate, engage, and empower learners worldwide.</p>
 
-  <div style="background:rgba(255,255,255,0.1); border-radius:20px; padding:40px; max-width:800px; margin:auto; backdrop-filter:blur(10px);">
-    <h2 style="color:#ffd369;">Ludo Wordo</h2>
-    <p><em>Play Ludo. Gain Wordo.</em><br><br>
-    Ludo Wordo is a fun, educational, multiplayer game where players collect letters and form words while playing Ludo. It combines language learning and entertainment like never before!</p>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="nav-container">
+    <div class="logo">Dhanadhipati Technologies LLP</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Ludo Wordo</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="account-deletion.html">Account Deletion</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
+</header>
 
-  <footer style="margin-top:60px; font-size:0.9em; color:#ddd;">
-    © 2025 Dhanadhipati Technologies LLP. All Rights Reserved.
-  </footer>
+<!-- CONTENT -->
+<section class="page">
+  <h1>Our Products</h1>
+
+  <p>
+    We build educational and engaging digital products that combine learning with fun.
+    Our focus is on making education accessible, interactive, and enjoyable for all age groups.
+  </p>
+
+  <div class="product-card">
+    <h2>Ludo Wordo</h2>
+    <p>
+      <em>Play Ludo. Gain Wordo.</em>
+    </p>
+    <p>
+      <strong>Ludo Wordo</strong> is an innovative educational multiplayer game that blends
+      classic Ludo gameplay with vocabulary learning.
+      Players collect letters, form words, and compete strategically —
+      making language learning fun, interactive, and memorable.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 Dhanadhipati Technologies LLP. All Rights Reserved.<br><br>
+
+  <a href="privacy-policy.html">Privacy Policy</a> |
+  <a href="terms-of-service.html">Terms of Service</a> |
+  <a href="account-deletion.html">Account Deletion</a> |
+  <a href="contact.html">Contact</a>
+</footer>
+
 </body>
 </html>
+
