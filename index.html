@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KCT3QZ5BV"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -10,215 +10,191 @@
     gtag('config', 'G-3KCT3QZ5BV');
   </script>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Dhanadhipati Technologies LLP</title>
-  <meta name="description" content="Dhanadhipati Technologies LLP - Innovating with Purpose. Creators of Ludo Wordo.">
+  <meta name="description" content="Creators of Ludo Wordo – an educational vocabulary-based Ludo game for kids, students, and learners.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* ===== GENERAL STYLE ===== */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
+      margin: 0;
       font-family: 'Poppins', sans-serif;
-      color: #f9f9f9;
-      overflow-x: hidden;
-      background: linear-gradient(135deg, #1a1a40, #2a2a72, #009ffd);
-      background-size: 300% 300%;
-      animation: gradientShift 12s ease infinite;
-    }
-
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      background: #f6f8fc;
+      color: #222;
     }
 
     header {
-      text-align: center;
-      padding: 90px 20px 40px;
-      animation: fadeInDown 1.2s ease forwards;
+      background: #1e2a5a;
+      padding: 18px 30px;
     }
 
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
+    .nav-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    h1 {
-      font-size: 3em;
+    .logo {
+      font-size: 20px;
       font-weight: 700;
-      color: #fff;
-      text-shadow: 0 0 15px rgba(255,255,255,0.25);
-    }
-
-    .tagline {
-      font-size: 1.2em;
-      color: #ffd369;
-      margin-top: 12px;
-      letter-spacing: 1px;
-      text-shadow: 0 0 6px rgba(255,211,105,0.4);
-    }
-
-    /* ===== NAVIGATION ===== */
-    nav {
-      margin-top: 45px;
+      color: #ffffff;
     }
 
     nav a {
-      color: #fff;
-      font-weight: 600;
+      color: #ffffff;
       text-decoration: none;
-      margin: 0 12px;
-      padding: 10px 18px;
-      border: 2px solid rgba(255,255,255,0.2);
-      border-radius: 25px;
-      transition: all 0.3s ease;
+      margin-left: 16px;
+      font-weight: 500;
+      font-size: 14px;
     }
 
     nav a:hover {
-      background: #ffd369;
-      color: #1a1a40;
-      box-shadow: 0 0 15px #ffd369;
+      text-decoration: underline;
     }
 
-    /* ===== PRODUCT SECTION ===== */
-    .product-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 90px 20px;
-      animation: fadeInUp 1.5s ease forwards;
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .product-card {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(14px);
-      border-radius: 25px;
-      padding: 50px 30px;
-      max-width: 900px;
+    .hero {
+      background: #ffffff;
+      padding: 70px 20px;
       text-align: center;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
 
-    .product-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 12px;
+      color: #1e2a5a;
     }
 
-    .product-logo {
-      width: 130px;
-      height: 130px;
-      border-radius: 20px;
-      margin-bottom: 25px;
-      border: 3px solid #ffd369;
-      box-shadow: 0 0 20px rgba(255,211,105,0.6);
-      background: url('https://upload.wikimedia.org/wikipedia/commons/6/6c/Ludo-Board.jpg') no-repeat center/cover;
+    .hero p {
+      font-size: 18px;
+      color: #555;
+      max-width: 720px;
+      margin: auto;
+      line-height: 1.6;
     }
 
-    .product-card h2 {
-      font-size: 2.3em;
-      color: #ffd369;
-      margin-bottom: 18px;
-      text-shadow: 0 0 8px rgba(255,211,105,0.4);
-    }
-
-    .product-card p {
-      font-size: 1.1em;
-      color: #e9f0ff;
-      line-height: 1.7em;
-      max-width: 750px;
-      margin: 0 auto 30px;
-    }
-
-    .cta-button {
-      background: #ffd369;
-      color: #1a1a40;
+    .hero button {
+      margin-top: 30px;
+      padding: 14px 34px;
+      font-size: 16px;
+      background: #ffb703;
       border: none;
-      border-radius: 30px;
-      padding: 12px 30px;
-      font-size: 1.1em;
-      font-weight: 700;
+      border-radius: 6px;
+      font-weight: 600;
       cursor: pointer;
-      transition: all 0.3s ease;
     }
 
-    .cta-button:hover {
-      background: #fff;
-      color: #2a2a72;
-      box-shadow: 0 0 20px #ffd369;
-      transform: scale(1.05);
+    .hero button:hover {
+      background: #fca311;
     }
 
-    /* ===== FOOTER ===== */
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 40px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      color: #1e2a5a;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #555;
+      line-height: 1.7;
+    }
+
     footer {
-      background: rgba(0,0,0,0.3);
-      text-align: center;
-      padding: 25px;
-      margin-top: 70px;
-      font-size: 0.95em;
+      background: #1e2a5a;
       color: #ddd;
+      text-align: center;
+      padding: 30px 15px;
+      font-size: 14px;
     }
 
     footer a {
-      color: #ffd369;
+      color: #ffb703;
       text-decoration: none;
+      margin: 0 8px;
     }
 
     footer a:hover {
-      color: #fff;
+      text-decoration: underline;
     }
 
-    /* ===== RESPONSIVE ===== */
     @media (max-width: 700px) {
-      h1 { font-size: 2.2em; }
-      .product-card h2 { font-size: 1.6em; }
-      .product-card p { font-size: 1em; }
-      nav a { display: inline-block; margin: 8px 6px; }
+      .hero h1 {
+        font-size: 26px;
+      }
+      nav {
+        font-size: 13px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>Dhanadhipati Technologies LLP</h1>
-    <div class="tagline">Innovating with Purpose • Building Games that Educate</div>
 
+<header>
+  <div class="nav-container">
+    <div class="logo">Dhanadhipati Technologies LLP</div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About Us</a>
+      <a href="products.html">Ludo Wordo</a>
       <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
       <a href="account-deletion.html">Account Deletion</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <section class="product-section">
-    <div class="product-card">
-      <div class="product-logo"></div>
-      <h2>Ludo Wordo</h2>
-      <p>
-        <strong>Play Ludo. Gain Wordo.</strong><br><br>
-        <em>Ludo Wordo</em> is a revolutionary way to learn English while playing your favorite game.  
-        Collect letters, form words, and unlock achievements as you challenge friends in this multiplayer experience that blends fun, education, and competition.
-      </p>
-      <button class="cta-button" onclick="window.location.href='products.html'">Explore Ludo Wordo</button>
-    </div>
-  </section>
+<section class="hero">
+  <h1>Play. Learn. Grow.</h1>
+  <p>
+    <strong>Ludo Wordo</strong> is an educational word-based Ludo game designed for
+    children, students, and lifelong learners.
+    Improve vocabulary while enjoying strategic gameplay — trusted by parents and schools.
+  </p>
+  <button onclick="window.location.href='products.html'">
+    Explore Ludo Wordo
+  </button>
+</section>
 
-  <footer>
-    © 2025 Dhanadhipati Technologies LLP. All Rights Reserved.<br>
-    Contact: <a href="mailto:cs.dhanadhipatitechnologies@gmail.com">cs.dhanadhipatitechnologies@gmail.com</a>
-  </footer>
+<section class="section">
+  <div class="card">
+    <h2>About Ludo Wordo</h2>
+    <p>
+      Ludo Wordo blends classic Ludo gameplay with vocabulary learning.
+      Players collect letters, form words, and compete using skill and strategy —
+      making learning fun and engaging for kids and adults alike.
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Dhanadhipati Technologies LLP. All Rights Reserved.<br><br>
+
+  <a href="privacy-policy.html">Privacy Policy</a> |
+  <a href="terms-of-service.html">Terms of Service</a> |
+  <a href="account-deletion.html">Account Deletion</a> |
+  <a href="contact.html">Contact</a><br><br>
+
+  📧 <a href="mailto:cs.dhanadhipatitechnologies@gmail.com">
+    cs.dhanadhipatitechnologies@gmail.com
+  </a>
+</footer>
+
 </body>
 </html>
+
