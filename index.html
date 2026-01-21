@@ -19,9 +19,8 @@
         header {
             background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             color: white;
-            padding: 70px 20px 30px;
+            padding: 70px 20px 40px;
             text-align: center;
-            position: relative;
         }
 
         header h1 {
@@ -33,15 +32,12 @@
             font-size: 18px;
             max-width: 900px;
             margin: auto;
+            opacity: 0.95;
         }
 
-        /* NAVIGATION BELOW TITLE – RIGHT ALIGNED */
+        /* NAVIGATION – CLEAN & CONSISTENT */
         nav {
-            max-width: 1200px;
-            margin: 25px auto 0;
-            padding: 0 20px;
-            display: flex;
-            justify-content: flex-end;
+            margin-top: 30px;
         }
 
         nav ul {
@@ -49,15 +45,17 @@
             margin: 0;
             padding: 0;
             display: flex;
-            gap: 20px;
+            justify-content: center;
             flex-wrap: wrap;
+            gap: 28px;
         }
 
         nav ul li a {
             color: #ffffff;
             text-decoration: none;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 15px;
+            letter-spacing: 0.3px;
         }
 
         nav ul li a:hover {
@@ -83,12 +81,32 @@
             box-shadow: 0 10px 24px rgba(0,0,0,0.08);
         }
 
+        /* FOOTER */
         footer {
             background: #0f2027;
             color: #bbb;
             text-align: center;
-            padding: 25px 10px;
+            padding: 50px 20px 30px;
             font-size: 14px;
+        }
+
+        .footer-cta {
+            margin-bottom: 25px;
+        }
+
+        .footer-cta a {
+            display: inline-block;
+            background: #ffffff;
+            color: #0f2027;
+            padding: 14px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .footer-cta a:hover {
+            opacity: 0.9;
         }
 
         footer a {
@@ -110,7 +128,7 @@
         strong engineering, and real-world value.
     </p>
 
-    <!-- NAVIGATION (TOP RIGHT BELOW TITLE) -->
+    <!-- CONSISTENT NAVIGATION -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -178,6 +196,10 @@
 </section>
 
 <footer>
+    <div class="footer-cta">
+        <a href="contact.html">Contact Us</a>
+    </div>
+
     © 2025 Dhanadhipati Technologies LLP |
     <a href="privacy-policy.html">Privacy Policy</a> |
     <a href="terms-of-service.html">Terms</a>
