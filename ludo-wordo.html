@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ludo Wordo</title>
-    <meta name="description" content="Ludo Wordo is an educational digital board game that combines classic Ludo gameplay with word formation to promote language learning through play.">
+    <meta name="description" content="Ludo Wordo is an innovative, strategy-based board game where players collect alphabets, move pawns intelligently, and complete a target word to win.">
     <style>
         body {
             margin: 0;
@@ -14,6 +14,7 @@
             background-color: #f7f8fc;
         }
 
+        /* Navigation */
         nav {
             background: #0f2027;
             padding: 15px 20px;
@@ -23,8 +24,8 @@
             margin: 0;
             padding: 0;
             display: flex;
-            gap: 20px;
             flex-wrap: wrap;
+            gap: 20px;
         }
         nav ul li a {
             color: #ffffff;
@@ -35,14 +36,15 @@
             text-decoration: underline;
         }
 
+        /* Header */
         header {
             background: linear-gradient(135deg, #203a43, #2c5364);
             color: white;
-            padding: 85px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
         header h1 {
-            font-size: 40px;
+            font-size: 42px;
             margin-bottom: 12px;
         }
         header p {
@@ -51,6 +53,7 @@
             margin: auto;
         }
 
+        /* Sections */
         section {
             max-width: 1100px;
             margin: 60px auto;
@@ -58,11 +61,11 @@
         }
         h2 {
             color: #0f2027;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
         }
 
         .card {
-            background: white;
+            background: #ffffff;
             padding: 35px;
             border-radius: 12px;
             box-shadow: 0 10px 24px rgba(0,0,0,0.08);
@@ -75,6 +78,23 @@
 
         ul {
             padding-left: 20px;
+        }
+
+        .cta {
+            background: #2c5364;
+            color: #ffffff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .cta a {
+            display: inline-block;
+            margin-top: 20px;
+            background: #ffffff;
+            color: #2c5364;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
         }
 
         footer {
@@ -95,6 +115,7 @@
 </head>
 <body>
 
+<!-- Navigation -->
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -106,104 +127,149 @@
     </ul>
 </nav>
 
+<!-- Header -->
 <header>
     <h1>Ludo Wordo</h1>
     <p>
-        A thoughtfully designed learning-based board game that integrates
-        traditional Ludo mechanics with word formation and language development.
+        A strategy-based board game where alphabets drive gameplay and
+        the right word decides the winner.
     </p>
 </header>
 
 <section>
-    <h2>Overview</h2>
+    <h2>What Exactly Is Ludo Wordo?</h2>
     <div class="card">
         <p>
-            Ludo Wordo is an educational digital game created to make language learning
-            natural, engaging, and inclusive. It reimagines the classic Ludo board game
-            by embedding vocabulary-based challenges directly into gameplay.
+            <strong>Ludo Wordo</strong> is an innovative, strategy-based board game where players
+            collect alphabets, move pawns intelligently, and complete a target word to win the match.
         </p>
         <p>
-            Instead of separating learning from entertainment, Ludo Wordo allows
-            players to develop language skills while playing a familiar and enjoyable
-            board game.
+            It is not about racing. It is not about memorization.
+            It is about strategy, positioning, and smart decision-making.
+        </p>
+        <p>
+            Every move can give you an alphabet.<br>
+            Every alphabet can change your options.<br>
+            The first player to complete the word wins.
         </p>
     </div>
 </section>
 
 <section>
-    <h2>Core Gameplay</h2>
+    <h2>The Core Objective</h2>
     <div class="card highlight">
-        <p>
-            The game follows the fundamental structure of traditional Ludo, ensuring
-            accessibility for players of all ages.
-        </p>
         <ul>
-            <li>Players roll a dice to move tokens across the board.</li>
-            <li>Selected board cells contain alphabets instead of empty spaces.</li>
-            <li>Landing on these cells allows players to collect letters.</li>
-            <li>Collected letters are used to form valid words within the game.</li>
-            <li>Word completion contributes to progress, rewards, and competitive advantage.</li>
+            <li>One target word is shown at the start of each match</li>
+            <li>Some alphabets of the word are missing</li>
+            <li>Players must identify and collect the missing alphabets</li>
+            <li>The first player to complete the word wins instantly</li>
         </ul>
     </div>
 </section>
 
 <section>
-    <h2>Learning Model</h2>
+    <h2>How the Gameplay Works</h2>
     <div class="card">
-        <p>
-            Ludo Wordo is built on the principle of implicit learning, where users acquire
-            vocabulary skills without the pressure of formal study.
-        </p>
-        <p>
-            Difficulty levels adapt gradually, introducing longer words, multiple missing
-            letters, and more complex vocabulary as the player progresses.
-        </p>
-        <p>
-            This structured progression ensures that beginners are not overwhelmed,
-            while advanced players remain engaged and challenged.
-        </p>
-    </div>
-</section>
-
-<section>
-    <h2>Progress and Achievement</h2>
-    <div class="card">
-        <p>
-            Each successfully formed word becomes part of the player’s personal word
-            collection, representing tangible learning progress.
-        </p>
-        <p>
-            Competitive features such as multiplayer matches and tournaments encourage
-            repeated gameplay, reinforcing learning through consistent practice.
-        </p>
-    </div>
-</section>
-
-<section>
-    <h2>Target Audience</h2>
-    <div class="card">
-        <p>
-            Ludo Wordo is designed for a wide and diverse audience:
-        </p>
+        <h3>Pawns and Movement</h3>
         <ul>
-            <li>Students learning or improving language skills</li>
-            <li>Exam aspirants strengthening vocabulary</li>
-            <li>Casual gamers seeking purposeful gameplay</li>
-            <li>Users from varied educational backgrounds</li>
+            <li>Players move pawns based on the number shown on dice rolls</li>
+            <li>The movement path is filled with alphabets</li>
+            <li>There is no finish point — pawns keep moving until the word is completed</li>
+        </ul>
+
+        <h3>Collecting Alphabets</h3>
+        <ul>
+            <li>Landing on a cell allows the player to collect that alphabet</li>
+            <li>Collected alphabets are used to complete the target word</li>
+            <li>Choosing the right path is a strategic decision</li>
+        </ul>
+
+        <h3>Pawn Battles</h3>
+        <ul>
+            <li>If a player kills an opponent’s pawn</li>
+            <li>The attacking player can collect one alphabet from the opponent</li>
+            <li>This adds risk, aggression, and tactical depth</li>
+        </ul>
+
+        <h3>Clues</h3>
+        <ul>
+            <li>Meaning-based clues help identify the word</li>
+            <li>Pronunciation clues are also available when needed</li>
         </ul>
     </div>
 </section>
 
 <section>
-    <h2>Vision</h2>
+    <h2>Multiplayer & Game Modes</h2>
+    <div class="card">
+        <ul>
+            <li>Real-time multiplayer with online players</li>
+            <li>Private game rooms to play with friends</li>
+            <li>Room-based invitations</li>
+            <li>2-player and 4-player matches</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Rewards & In-Game Systems</h2>
+    <div class="card">
+        <h3>Coins & Entry Fees</h3>
+        <p>Each match requires an entry fee paid using coins. Winning games earns more coins.</p>
+
+        <h3>Wheel & Daily Rewards</h3>
+        <p>Players can use the wheel and claim daily rewards to gain bonuses.</p>
+
+        <h3>Magic Boxes</h3>
+        <p>Magic boxes provide surprise gifts, including special cards that may unlock additional clues.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Leaderboards & Progress</h2>
+    <div class="card">
+        <ul>
+            <li>Global leaderboards</li>
+            <li>Weekly, monthly, and seasonal rankings</li>
+            <li>Exciting rewards for top players</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>House of Words</h2>
     <div class="card highlight">
         <p>
-            Ludo Wordo aims to demonstrate that education and entertainment can coexist
-            meaningfully. By blending play, competition, and learning, the platform seeks
-            to make language development accessible, enjoyable, and sustainable.
+            Every time a player wins a match, the target word from that game is added to their
+            <strong>House of Words</strong>.
+        </p>
+        <p>
+            Players can revisit these words anytime and learn from their past victories.
         </p>
     </div>
 </section>
+
+<section>
+    <h2>Friends & Referrals</h2>
+    <div class="card">
+        <ul>
+            <li>Add friends by entering their username</li>
+            <li>Send and accept friend requests</li>
+            <li>Refer friends and grow the community</li>
+        </ul>
+    </div>
+</section>
+
+<div class="cta">
+    <h2>Product Status</h2>
+    <p>
+        Ludo Wordo is currently under active development.
+        If you’d like to play early or test the game before release, register your interest below.
+    </p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwcYjzqlx4xcOitgDVKhGmDW1f4nqvG6I1_4FgHYXyMVaWjg/viewform?usp=preview" target="_blank">
+        Join Early Access
+    </a>
+</div>
 
 <footer>
     © 2025 Dhanadhipati Technologies LLP |
