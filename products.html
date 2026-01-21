@@ -1,311 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KCT3QZ5BV"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-3KCT3QZ5BV');
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Wordo</title>
+    <meta name="description" content="Ludo Wordo is a learning-based board game that combines classic Ludo gameplay with word formation and language development.">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #2c2c2c;
+            background-color: #f7f8fc;
+        }
 
-  <meta charset="UTF-8">
-  <title>Products | Dhanadhipati Technologies LLP</title>
-  <meta name="description" content="Explore products by Dhanadhipati Technologies LLP including Ludo Wordo educational game.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        /* NAVBAR */
+        nav {
+            background: #0f2027;
+            padding: 15px 20px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        header {
+            background: linear-gradient(135deg, #2c5364, #203a43);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
+            max-width: 850px;
+            margin: auto;
+        }
 
-  <style>
-    :root {
-      --primary: #1e2a5a;
-      --accent: #ffb703;
-      --bg: #f6f8fc;
-      --text-dark: #222;
-      --text-muted: #555;
-      --card-bg: #ffffff;
-    }
+        section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            color: #0f2027;
+            margin-bottom: 15px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        .highlight {
+            background: #eef4f8;
+            border-left: 6px solid #2c5364;
+        }
+        ul {
+            padding-left: 20px;
+        }
 
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: var(--bg);
-      color: var(--text-dark);
-    }
-
-    /* HEADER */
-    header {
-      background: var(--primary);
-    }
-
-    .nav-container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 16px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 20px;
-      font-weight: 700;
-      color: #ffffff;
-    }
-
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: 14px;
-      font-weight: 500;
-    }
-
-    nav a:hover { text-decoration: underline; }
-
-    /* PAGE */
-    .page {
-      max-width: 1100px;
-      margin: auto;
-      padding: 80px 20px;
-    }
-
-    .page h1 {
-      font-size: 36px;
-      color: var(--primary);
-      margin-bottom: 20px;
-    }
-
-    .page p {
-      font-size: 16px;
-      line-height: 1.8;
-      color: var(--text-muted);
-      max-width: 820px;
-    }
-
-    /* PRODUCT HIGHLIGHT */
-    .product-highlight {
-      background: var(--card-bg);
-      border-left: 6px solid var(--accent);
-      border-radius: 12px;
-      padding: 40px;
-      margin: 50px 0;
-      box-shadow: 0 18px 40px rgba(0,0,0,0.08);
-    }
-
-    .product-highlight h2 {
-      font-size: 28px;
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
-
-    .tagline {
-      font-weight: 600;
-      color: var(--accent);
-      margin-bottom: 20px;
-    }
-
-    /* SECTIONS */
-    .section {
-      margin-top: 60px;
-    }
-
-    .section h3 {
-      font-size: 22px;
-      color: var(--primary);
-      margin-bottom: 12px;
-    }
-
-    .section ul {
-      padding-left: 20px;
-    }
-
-    .section li {
-      margin-bottom: 8px;
-      color: var(--text-muted);
-    }
-
-    /* CTA */
-    .cta {
-      background: var(--primary);
-      color: #ffffff;
-      padding: 40px;
-      border-radius: 14px;
-      margin-top: 80px;
-      text-align: center;
-    }
-
-    .cta h3 {
-      margin-bottom: 10px;
-    }
-
-    .cta p {
-      color: #e0e0e0;
-    }
-
-    .cta a {
-      display: inline-block;
-      margin-top: 20px;
-      background: var(--accent);
-      color: var(--primary);
-      padding: 14px 28px;
-      border-radius: 6px;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .cta a:hover {
-      background: #fca311;
-    }
-
-    /* FOOTER */
-    footer {
-      background: var(--primary);
-      color: #ddd;
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 14px;
-    }
-
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-      margin: 0 8px;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 768px) {
-      .page h1 { font-size: 28px; }
-      .product-highlight { padding: 28px; }
-    }
-  </style>
+        footer {
+            background: #0f2027;
+            color: #bbb;
+            text-align: center;
+            padding: 25px 10px;
+            font-size: 14px;
+        }
+        footer a {
+            color: #bbb;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
 <body>
 
-<!-- HEADER -->
+<!-- NAVIGATION -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ludo-wordo.html">Ludo Wordo</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-of-service.html">Terms of Service</a></li>
+        <li><a href="account-deletion.html">Account Deletion</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
 <header>
-  <div class="nav-container">
-    <div class="logo">Dhanadhipati Technologies LLP</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms-of-service.html">Terms of Service</a>
-      <a href="account-deletion.html">Account Deletion</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
+    <h1>Ludo Wordo</h1>
+    <p>
+        A learning-focused board game that blends classic Ludo mechanics
+        with word formation and language development.
+    </p>
 </header>
 
-<!-- PAGE CONTENT -->
-<section class="page">
-  <h1>Products</h1>
-  <p>
-    We build educational digital products that combine learning, engagement,
-    and real-world value. Below is our flagship product currently under development.
-  </p>
-
-  <!-- LUDO WORDO HIGHLIGHT -->
-  <div class="product-highlight">
-    <h2>Ludo Wordo</h2>
-    <div class="tagline">Play Ludo. Learn Words.</div>
-
-    <p>
-      <strong>Ludo Wordo</strong> is an innovative educational game that blends
-      classic Ludo gameplay with vocabulary learning.
-      Players don’t just rely on luck — they learn, think, and strategize using words.
-    </p>
-
-    <!-- WHAT IS -->
-    <div class="section">
-      <h3>What is Ludo Wordo?</h3>
-      <p>
-        Ludo Wordo is a skill-based word game inspired by traditional Ludo.
-        Each match introduces words with missing letters.
-        Players move their pawns on the board to collect letters and complete words
-        before their opponents.
-      </p>
+<section>
+    <h2>What Is Ludo Wordo?</h2>
+    <div class="card">
+        <p>
+            Ludo Wordo is an educational digital game designed to make language learning
+            engaging, intuitive, and inclusive.
+        </p>
+        <p>
+            The game combines the familiar structure of traditional Ludo with
+            word-based challenges, allowing players to learn vocabulary naturally
+            while playing.
+        </p>
     </div>
-
-    <!-- HOW TO PLAY -->
-    <div class="section">
-      <h3>How the Game is Played</h3>
-      <ul>
-        <li>Each player is assigned a word with missing letters</li>
-        <li>Letters are placed strategically on the Ludo board</li>
-        <li>Players move their pawns to collect the required letters</li>
-        <li>Correct moves and smart strategy help complete the word faster</li>
-        <li>The first player to complete the word wins</li>
-      </ul>
-    </div>
-
-    <!-- RULES -->
-    <div class="section">
-      <h3>Basic Game Rules</h3>
-      <ul>
-        <li>The game follows core Ludo movement rules</li>
-        <li>Players must collect correct letters to complete their word</li>
-        <li>Strategic moves matter more than luck</li>
-        <li>Incorrect moves do not help complete the word</li>
-      </ul>
-    </div>
-
-    <!-- BENEFITS -->
-    <div class="section">
-      <h3>Benefits of Playing Ludo Wordo</h3>
-      <ul>
-        <li>Improves vocabulary naturally through gameplay</li>
-        <li>Enhances memory and word recognition</li>
-        <li>Encourages strategic thinking</li>
-        <li>Makes learning fun instead of stressful</li>
-        <li>Suitable for both individual and group play</li>
-      </ul>
-    </div>
-
-    <!-- WHO CAN PLAY -->
-    <div class="section">
-      <h3>Who Can Play?</h3>
-      <ul>
-        <li>School students (primary to higher grades)</li>
-        <li>College students and job aspirants</li>
-        <li>Parents and families</li>
-        <li>Teachers and schools for classroom engagement</li>
-        <li>Anyone who wants to improve vocabulary while playing</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- EARLY ACCESS CTA -->
-  <div class="cta">
-    <h3>Get Early Access to Ludo Wordo</h3>
-    <p>
-      Ludo Wordo is currently under development.
-      If you’d like to try the APK before public launch,
-      sign up using the link below.
-    </p>
-    <a href="https://forms.gle/8VodjircWD96fwUt9" target="_blank">
-      Join Early Access (APK)
-    </a>
-  </div>
-
 </section>
 
-<!-- FOOTER -->
-<footer>
-  © 2025 Dhanadhipati Technologies LLP. All Rights Reserved.<br><br>
+<section>
+    <h2>How the Game Works</h2>
+    <div class="card highlight">
+        <ul>
+            <li>Players move tokens on a Ludo-style board using dice rolls.</li>
+            <li>Certain cells contain alphabets instead of empty spaces.</li>
+            <li>Landing on an alphabet allows the player to collect that letter.</li>
+            <li>Collected letters are used to form meaningful words.</li>
+            <li>Successful word formation contributes to progress and rewards.</li>
+        </ul>
+    </div>
+</section>
 
-  <a href="privacy-policy.html">Privacy Policy</a> |
-  <a href="terms-of-service.html">Terms of Service</a> |
-  <a href="account-deletion.html">Account Deletion</a> |
-  <a href="contact.html">Contact</a>
+<section>
+    <h2>Learning Through Gameplay</h2>
+    <div class="card">
+        <p>
+            Ludo Wordo is designed so that learning happens naturally during play,
+            without forcing users into traditional study patterns.
+        </p>
+        <p>
+            As players progress, the game gradually introduces more complex
+            word challenges, helping improve vocabulary, spelling, and confidence.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Progress & Achievement</h2>
+    <div class="card">
+        <p>
+            Every successfully formed word becomes part of the player’s personal
+            word collection, creating a sense of achievement and visible learning growth.
+        </p>
+        <p>
+            Competitive elements such as multiplayer matches and tournaments
+            encourage repeated play and consistent learning.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Who Ludo Wordo Is For</h2>
+    <div class="card">
+        <ul>
+            <li>Students and beginners learning a language</li>
+            <li>Users preparing for competitive or academic exams</li>
+            <li>Casual players who enjoy board games with purpose</li>
+            <li>Learners from diverse educational backgrounds</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Vision</h2>
+    <div class="card highlight">
+        <p>
+            Ludo Wordo aims to demonstrate that learning does not need to be separate
+            from entertainment.
+        </p>
+        <p>
+            By blending play, competition, and education, the game aspires to
+            make language learning accessible to a wider audience.
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2025 Dhanadhipati Technologies LLP |
+    <a href="privacy-policy.html">Privacy Policy</a> |
+    <a href="terms-of-service.html">Terms</a>
 </footer>
 
 </body>
 </html>
-
-
