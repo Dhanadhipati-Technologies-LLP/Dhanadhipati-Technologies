@@ -1,216 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KCT3QZ5BV"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-3KCT3QZ5BV');
-  </script>
-
-  <meta charset="UTF-8">
-  <title>Dhanadhipati Technologies LLP</title>
-  <meta name="description" content="Dhanadhipati Technologies LLP builds educational and digital products with purpose.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary: #1e2a5a;
-      --accent: #ffb703;
-      --bg: #f6f8fc;
-      --section-bg: #ffffff;
-      --text-dark: #222;
-      --text-muted: #555;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: var(--bg);
-      color: var(--text-dark);
-    }
-
-    /* HEADER */
-    header {
-      background: var(--primary);
-    }
-
-    .nav-container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 16px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 20px;
-      font-weight: 700;
-      color: #ffffff;
-    }
-
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: 14px;
-      font-weight: 500;
-    }
-
-    nav a:hover { text-decoration: underline; }
-
-    /* HERO */
-    .hero {
-      background: #ffffff;
-      padding: 96px 20px 80px;
-    }
-
-    .hero-inner {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
-      color: var(--primary);
-    }
-
-    .hero p {
-      font-size: 18px;
-      line-height: 1.75;
-      color: var(--text-muted);
-      max-width: 760px;
-      margin: auto;
-    }
-
-    /* COMPANY SECTION (PROFESSIONAL) */
-    .company-section {
-      background: var(--section-bg);
-      padding: 80px 20px;
-      border-top: 1px solid #e6e8ef;
-    }
-
-    .company-inner {
-      max-width: 1100px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1fr;
-      row-gap: 24px;
-    }
-
-    .company-inner h2 {
-      font-size: 28px;
-      color: var(--primary);
-      margin: 0;
-    }
-
-    .company-inner p {
-      font-size: 16px;
-      line-height: 1.85;
-      color: var(--text-muted);
-      max-width: 720px;
-    }
-
-    .company-inner a {
-      color: var(--primary);
-      font-weight: 600;
-      text-decoration: underline;
-    }
-
-    /* FOOTER */
-    footer {
-      background: var(--primary);
-      color: #ddd;
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 14px;
-    }
-
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-      margin: 0 8px;
-    }
-
-    footer a:hover { text-decoration: underline; }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 30px; }
-      nav a { margin-left: 12px; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanadhipati Technologies LLP</title>
+    <meta name="description" content="Dhanadhipati Technologies LLP builds innovative, value-driven technology solutions that solve real-world problems and create long-term impact.">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #2c2c2c;
+            background-color: #f7f8fc;
+        }
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 90px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 18px;
+            max-width: 850px;
+            margin: auto;
+            opacity: 0.95;
+        }
+        section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            color: #0f2027;
+            margin-bottom: 15px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        .highlight {
+            background: #eef4f8;
+            border-left: 6px solid #2c5364;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .cta {
+            background: #2c5364;
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+            margin-top: 70px;
+        }
+        .cta a {
+            display: inline-block;
+            margin-top: 20px;
+            background: white;
+            color: #2c5364;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            background: #0f2027;
+            color: #bbb;
+            text-align: center;
+            padding: 25px 10px;
+            font-size: 14px;
+        }
+    </style>
 </head>
-
 <body>
 
-<!-- HEADER -->
 <header>
-  <div class="nav-container">
-    <div class="logo">Dhanadhipati Technologies LLP</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms-of-service.html">Terms of Service</a>
-      <a href="account-deletion.html">Account Deletion</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
+    <h1>Dhanadhipati Technologies LLP</h1>
+    <p>
+        Building innovative, thoughtful, and scalable technology solutions
+        that create real value in the world.
+    </p>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-inner">
-    <h1>Building Technology with Purpose</h1>
+<section>
+    <h2>Who We Are</h2>
     <p>
-      Dhanadhipati Technologies LLP is a digital innovation company focused on creating
-      meaningful, user-friendly, and educational technology products.
-      Our mission is to combine learning, accessibility, and smart design
-      to create real-world impact.
+        Dhanadhipati Technologies LLP is a technology-driven organization committed to
+        solving meaningful problems through innovation, strong engineering,
+        and long-term thinking.
     </p>
-  </div>
+    <p>
+        We focus on creating digital products and systems that are practical,
+        sustainable, and designed with real users in mind.
+    </p>
 </section>
 
-<!-- WHAT WE DO (PROFESSIONAL LAYOUT) -->
-<section class="company-section">
-  <div class="company-inner">
-    <h2>What We Do</h2>
-    <p>
-      We design and develop digital products that focus on education, engagement,
-      and long-term value creation. Our work emphasizes simplicity,
-      usability, and positive learning outcomes.
-    </p>
-    <p>
-      To explore our offerings, please visit the <a href="products.html">Products</a> page.
-    </p>
-  </div>
+<section>
+    <h2>Our Approach</h2>
+    <div class="card highlight">
+        <p>
+            We believe technology should serve a clear purpose.
+            Every solution we build is guided by three core principles:
+        </p>
+        <ul>
+            <li>✔ Solve a real problem</li>
+            <li>✔ Keep the experience simple and human</li>
+            <li>✔ Design for scale and longevity</li>
+        </ul>
+    </div>
 </section>
 
-<!-- FOOTER -->
+<section>
+    <h2>What We Build</h2>
+    <div class="card">
+        <p>
+            We work on carefully chosen technology initiatives that aim to deliver
+            measurable impact rather than short-term trends.
+        </p>
+        <p>
+            Our work often involves combining product thinking, software engineering,
+            and data-driven decision making to create solutions that are both
+            innovative and usable.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Our Work</h2>
+    <div class="card">
+        <h3>Ludo Wordo</h3>
+        <p>
+            Ludo Wordo is one of our flagship initiatives, created with the vision
+            of making learning more accessible, engaging, and inclusive.
+        </p>
+        <p>
+            While it represents our capability to build large-scale digital products,
+            it is only one part of our broader technology journey.
+        </p>
+        <p><em>A dedicated page exists for this product.</em></p>
+    </div>
+</section>
+
+<section>
+    <h2>Why We Exist</h2>
+    <ul>
+        <li>To create technology that genuinely improves lives</li>
+        <li>To build solutions that stand the test of time</li>
+        <li>To focus on value creation over hype</li>
+        <li>To think beyond categories and labels</li>
+    </ul>
+</section>
+
+<div class="cta">
+    <h2>Let’s Create Meaningful Technology</h2>
+    <p>
+        We welcome conversations with educators, innovators, investors,
+        and organizations who believe in building technology with purpose.
+    </p>
+    <a href="mailto:cs.dhanadhipatitechnologies@gmail.com">Contact Us</a>
+</div>
+
 <footer>
-  © 2025 Dhanadhipati Technologies LLP. All Rights Reserved.<br><br>
-
-  <a href="privacy-policy.html">Privacy Policy</a> |
-  <a href="terms-of-service.html">Terms of Service</a> |
-  <a href="account-deletion.html">Account Deletion</a> |
-  <a href="contact.html">Contact</a><br><br>
-
-  📧 <a href="mailto:cs.dhanadhipatitechnologies@gmail.com">
-    cs.dhanadhipatitechnologies@gmail.com
-  </a>
+    © 2025 Dhanadhipati Technologies LLP | Vijayawada, Andhra Pradesh, India
 </footer>
 
 </body>
 </html>
+
 
 
