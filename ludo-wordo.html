@@ -15,7 +15,6 @@
       background-color: #f7f8fc;
     }
 
-    /* HEADER + NAV (CONSISTENT ACROSS SITE) */
     header {
       background: #0f2027;
       color: #ffffff;
@@ -35,7 +34,6 @@
     .logo {
       font-size: 20px;
       font-weight: bold;
-      letter-spacing: 0.5px;
     }
 
     nav a {
@@ -50,7 +48,6 @@
       text-decoration: underline;
     }
 
-    /* HERO */
     .hero {
       background: linear-gradient(135deg, #203a43, #2c5364);
       color: white;
@@ -69,7 +66,6 @@
       margin: auto;
     }
 
-    /* CONTENT */
     section {
       max-width: 1100px;
       margin: 60px auto;
@@ -97,7 +93,6 @@
       padding-left: 20px;
     }
 
-    /* CTA */
     .cta {
       background: #2c5364;
       color: white;
@@ -122,15 +117,6 @@
       text-align: center;
       padding: 25px 10px;
       font-size: 14px;
-    }
-
-    footer a {
-      color: #bbb;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -160,21 +146,24 @@
 </div>
 
 <section>
-  <h2>What Exactly Is Ludo Wordo?</h2>
+  <h2>What Is Ludo Wordo?</h2>
   <div class="card">
     <p>
       <strong>Ludo Wordo</strong> is an innovative, strategy-based board game where players
-      collect alphabets, move pawns thoughtfully, and complete a target word to win.
+      collect alphabets, move pawns thoughtfully, and complete a <strong>given word</strong> to win.
     </p>
+
     <p>
-      It is not about racing. It is not about memorization.
+      It is not about racing.<br>
+      It is not about memorization.<br>
       It is about smart movement, sharp decisions, and outplaying opponents.
     </p>
-    <p>
-      Every move can give you an alphabet.<br>
-      Every alphabet can open new possibilities.<br>
-      The right word ends the game.
-    </p>
+
+    <ul>
+      <li>Every move can give you an alphabet</li>
+      <li>Every alphabet can bring you closer to winning the game</li>
+      <li>The right word ends the game</li>
+    </ul>
   </div>
 </section>
 
@@ -182,7 +171,7 @@
   <h2>The Core Objective</h2>
   <div class="card highlight">
     <ul>
-      <li>Each match begins with one target word</li>
+      <li>Each match begins with one given word</li>
       <li>Some alphabets of the word are missing</li>
       <li>Players must identify and collect the missing alphabets</li>
       <li>The first player to complete the word wins instantly</li>
@@ -196,73 +185,28 @@
     <h3>Pawns and Movement</h3>
     <ul>
       <li>Players move pawns based on the number shown on dice rolls</li>
-      <li>The entire movement path is filled with alphabets</li>
+      <li>The entire <strong>Ludo game path</strong> is filled with alphabets</li>
       <li>There is no finish point — the game continues until the word is completed</li>
     </ul>
 
     <h3>Collecting Alphabets</h3>
     <ul>
       <li>Landing on a cell allows the player to collect that alphabet</li>
-      <li>Collected alphabets are used to complete the target word</li>
-      <li>Strategic movement is key to winning faster</li>
+      <li>Collected alphabets are used to complete the given word</li>
+      <li>Strategic movement decides how fast you win</li>
     </ul>
 
     <h3>Pawn Battles</h3>
     <ul>
-      <li>If a player kills an opponent’s pawn</li>
-      <li>The attacking player can collect one alphabet from the opponent</li>
-      <li>This adds tactical depth and direct competition</li>
+      <li>Killing an opponent’s pawn allows alphabet stealing</li>
+      <li>One alphabet can be collected from the opponent</li>
+      <li>This adds risk, aggression, and tactical depth</li>
     </ul>
 
     <h3>Clues</h3>
     <ul>
-      <li>Meaning-based clues help players identify the word</li>
-      <li>Pronunciation-based clues are available when needed</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Multiplayer & Game Modes</h2>
-  <div class="card">
-    <ul>
-      <li>Real-time multiplayer with players online</li>
-      <li>Create private game rooms and invite friends</li>
-      <li>Play 2-player or 4-player matches</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Rewards & In-Game Systems</h2>
-  <div class="card">
-    <h3>Coins & Entry Fees</h3>
-    <p>
-      Each match requires an entry fee paid using coins. Winning games rewards players
-      with more coins.
-    </p>
-
-    <h3>Wheel & Daily Rewards</h3>
-    <p>
-      Players can earn rewards by <strong>spinning the wheel</strong> and by claiming
-      daily rewards for regular play.
-    </p>
-
-    <h3>Magic Boxes</h3>
-    <p>
-      Magic boxes contain surprise gifts. Unboxing them may unlock special cards
-      that help players access additional clues during gameplay.
-    </p>
-  </div>
-</section>
-
-<section>
-  <h2>Leaderboards & Progress</h2>
-  <div class="card">
-    <ul>
-      <li>Global leaderboards</li>
-      <li>Weekly, monthly, and seasonal rankings</li>
-      <li>Exciting prizes for top-performing players</li>
+      <li>Meaning-based clues help identify the word</li>
+      <li>Pronunciation-based clues assist when stuck</li>
     </ul>
   </div>
 </section>
@@ -270,23 +214,11 @@
 <section>
   <h2>House of Words</h2>
   <div class="card highlight">
-    <p>
-      Every time a player wins a match, the word from that game is added to their
-      <strong>House of Words</strong>.
-    </p>
-    <p>
-      Players can revisit these words anytime and learn from their victories.
-    </p>
-  </div>
-</section>
-
-<section>
-  <h2>Friends & Referrals</h2>
-  <div class="card">
     <ul>
-      <li>Add friends by entering their username</li>
-      <li>Send and accept friend requests</li>
-      <li>Invite friends using the referral feature</li>
+      <li>Every winning word is stored automatically</li>
+      <li>Players build a personal word collection</li>
+      <li>Words can be revisited and learned anytime</li>
+      <li>Progress stays even after the match ends</li>
     </ul>
   </div>
 </section>
@@ -295,7 +227,7 @@
   <h2>Product Status</h2>
   <p>
     Ludo Wordo is currently under active development.
-    Curious to play before release or test the game?
+    Want to play early or test the game before release?
   </p>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwcYjzqlx4xcOitgDVKhGmDW1f4nqvG6I1_4FgHYXyMVaWjg/viewform?usp=preview" target="_blank">
     Join Early Access
@@ -303,9 +235,7 @@
 </div>
 
 <footer>
-  © 2025 Dhanadhipati Technologies LLP |
-  <a href="privacy-policy.html">Privacy Policy</a> |
-  <a href="terms-of-service.html">Terms</a>
+  © 2025 Dhanadhipati Technologies LLP
 </footer>
 
 </body>
