@@ -1,197 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KCT3QZ5BV"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-3KCT3QZ5BV');
-  </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KCT3QZ5BV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-3KCT3QZ5BV');
+    </script>
 
-  <meta charset="UTF-8">
-  <title>Account Deletion | Ludo Wordo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Account deletion process for Ludo Wordo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion | Ludo Wordo</title>
+    <meta name="description" content="Account deletion process for Ludo Wordo">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #111827;
+            background-color: #f5f7fb;
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #f6f8fc;
-      color: #222;
-    }
+        /* HEADER */
+        header {
+            background-color: #1f2933;
+            color: #ffffff;
+            padding: 60px 20px 40px;
+            text-align: center;
+        }
 
-    /* HEADER */
-    header {
-      background: #1e2a5a;
-      padding: 18px 30px;
-    }
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
 
-    .nav-container {
-      max-width: 1100px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+        header p {
+            font-size: 16px;
+            max-width: 900px;
+            margin: auto;
+            color: #cbd5e1;
+        }
 
-    .logo {
-      font-size: 20px;
-      font-weight: 700;
-      color: #ffffff;
-    }
+        /* NAVIGATION */
+        nav {
+            margin-top: 25px;
+        }
 
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      margin-left: 16px;
-      font-size: 14px;
-      font-weight: 500;
-    }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 28px;
+        }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+        }
 
-    /* PAGE CONTENT */
-    .page {
-      max-width: 900px;
-      margin: auto;
-      padding: 60px 20px;
-    }
+        nav ul li a:hover {
+            color: #60a5fa;
+            text-decoration: underline;
+        }
 
-    .page h1 {
-      color: #1e2a5a;
-      margin-bottom: 15px;
-    }
+        /* PAGE CONTENT */
+        section {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
 
-    .page h2 {
-      color: #1e2a5a;
-      margin-top: 35px;
-      margin-bottom: 10px;
-    }
+        h2 {
+            color: #1f2933;
+            margin-top: 35px;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
 
-    .page p,
-    .page li {
-      color: #555;
-      line-height: 1.7;
-      font-size: 15px;
-    }
+        p {
+            color: #374151;
+            font-size: 15px;
+            margin-bottom: 14px;
+        }
 
-    .page ul {
-      padding-left: 20px;
-    }
+        ul {
+            padding-left: 20px;
+        }
 
-    .note {
-      background: #ffffff;
-      border-left: 5px solid #ffb703;
-      padding: 18px 20px;
-      margin-top: 25px;
-      border-radius: 6px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-    }
+        ul li {
+            margin-bottom: 8px;
+            color: #374151;
+            font-size: 15px;
+        }
 
-    /* FOOTER */
-    footer {
-      background: #1e2a5a;
-      color: #ddd;
-      text-align: center;
-      padding: 30px 15px;
-      font-size: 14px;
-    }
+        .card {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+        }
 
-    footer a {
-      color: #ffb703;
-      text-decoration: none;
-      margin: 0 8px;
-    }
+        .note {
+            background: #f0f4f8;
+            border-left: 5px solid #2563eb;
+            padding: 20px 22px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
 
-    footer a:hover {
-      text-decoration: underline;
-    }
+        /* FOOTER */
+        footer {
+            background-color: #1f2933;
+            color: #9ca3af;
+            text-align: center;
+            padding: 30px 10px;
+            font-size: 14px;
+        }
 
-    @media (max-width: 700px) {
-      nav a {
-        margin-left: 10px;
-        font-size: 13px;
-      }
-    }
-  </style>
+        footer a {
+            color: #9ca3af;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-  <div class="nav-container">
-    <div class="logo">Dhanadhipati Technologies LLP</div>
+    <h1>Account Deletion</h1>
+    <p>
+        Ludo Wordo – Dhanadhipati Technologies LLP
+    </p>
+
     <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Ludo Wordo</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms-of-service.html">Terms of Service</a>
-      <a href="account-deletion.html">Account Deletion</a>
-      <a href="contact.html">Contact</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ludo-wordo.html">Ludo Wordo</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="account-deletion.html">Account Deletion</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
-  </div>
 </header>
 
-<!-- CONTENT -->
-<section class="page">
-  <h1>Account Deletion Request</h1>
+<section>
+    <div class="card">
+        <p>
+            If you wish to permanently delete your account or personal data associated with
+            <strong>Ludo Wordo</strong>, please send an email to:
+        </p>
 
-  <p>
-    If you wish to permanently delete your account or personal data associated with
-    <strong>Ludo Wordo</strong>, please send an email to:
-  </p>
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:cs.dhanadhipatitechnologies@gmail.com">
+                cs.dhanadhipatitechnologies@gmail.com
+            </a>
+        </p>
 
-  <p>
-    <strong>Email:</strong>
-    <a href="mailto:cs.dhanadhipatitechnologies@gmail.com">
-      cs.dhanadhipatitechnologies@gmail.com
-    </a>
-  </p>
+        <h2>Include the Following Details</h2>
+        <ul>
+            <li>Registered username or user ID</li>
+            <li>Registered email address</li>
+            <li>Email subject: <strong>Account Deletion Request</strong></li>
+        </ul>
 
-  <h2>Include the following details:</h2>
-  <ul>
-    <li>Registered username or user ID</li>
-    <li>Registered email address</li>
-    <li>Subject line: <strong>Account Deletion Request</strong></li>
-  </ul>
+        <h2>What Happens Next</h2>
+        <ul>
+            <li>Verification of your identity</li>
+            <li>Account deletion within <strong>7 business days</strong></li>
+            <li>Confirmation email after deletion</li>
+        </ul>
 
-  <h2>What Happens Next</h2>
-  <ul>
-    <li>Verification of your identity</li>
-    <li>Account deletion within <strong>7 business days</strong></li>
-    <li>Confirmation email sent after deletion</li>
-  </ul>
+        <div class="note">
+            <strong>Important:</strong>
+            <ul>
+                <li>Deleted accounts cannot be recovered</li>
+                <li>If you used Google or Facebook login, send the request from the same registered email</li>
+                <li>Some financial or legal records may be retained as required by law</li>
+            </ul>
+        </div>
 
-  <div class="note">
-    <strong>Important:</strong>
-    <ul>
-      <li>Deleted accounts cannot be recovered</li>
-      <li>If you used Google or Facebook login, send the request from the same registered email</li>
-      <li>Some financial or legal records may be retained as required by law</li>
-    </ul>
-  </div>
-
-  <p style="margin-top: 30px;">
-    <a href="index.html">← Back to Home</a>
-  </p>
+        <p style="margin-top: 30px;">
+            <a href="index.html">← Back to Home</a>
+        </p>
+    </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  © 2025 Dhanadhipati Technologies LLP. All Rights Reserved.<br><br>
-
-  <a href="privacy-policy.html">Privacy Policy</a> |
-  <a href="terms-of-service.html">Terms of Service</a> |
-  <a href="account-deletion.html">Account Deletion</a> |
-  <a href="contact.html">Contact</a>
+    © 2025 Dhanadhipati Technologies LLP |
+    <a href="privacy-policy.html">Privacy Policy</a> |
+    <a href="terms-of-service.html">Terms of Service</a> |
+    <a href="account-deletion.html">Account Deletion</a> |
+    <a href="contact.html">Contact</a>
 </footer>
 
 </body>
