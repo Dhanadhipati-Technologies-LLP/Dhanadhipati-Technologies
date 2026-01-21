@@ -1,289 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ludo Wordo</title>
-    <meta name="description" content="Ludo Wordo is an educational, word-based board game that blends classic Ludo gameplay with strategy and vocabulary learning.">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.7;
-            color: #2c2c2c;
-            background-color: #f7f8fc;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ludo Wordo</title>
+  <meta name="description" content="Ludo Wordo is an educational word-based game that combines classic Ludo gameplay with vocabulary learning and strategy.">
 
-        /* NAVIGATION – CONSISTENT WITH OTHER PAGES */
-        nav {
-            background: #0f2027;
-            padding: 15px 20px;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: #2c2c2c;
+      background-color: #f7f8fc;
+    }
 
-        header {
-            background: linear-gradient(135deg, #203a43, #2c5364);
-            color: white;
-            padding: 90px 20px;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 42px;
-            margin-bottom: 14px;
-        }
-        header p {
-            font-size: 18px;
-            max-width: 900px;
-            margin: auto;
-        }
+    /* HEADER + NAV (CONSISTENT ACROSS SITE) */
+    header {
+      background: #0f2027;
+      color: #ffffff;
+      padding: 18px 0;
+    }
 
-        section {
-            max-width: 1100px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-        h2 {
-            color: #0f2027;
-            margin-bottom: 16px;
-        }
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
 
-        .card {
-            background: #ffffff;
-            padding: 36px;
-            border-radius: 12px;
-            box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-        }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
 
-        .highlight {
-            background: #eef4f8;
-            border-left: 6px solid #2c5364;
-        }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+      font-weight: 500;
+    }
 
-        ul {
-            padding-left: 20px;
-        }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-        .cta {
-            background: #2c5364;
-            color: #ffffff;
-            text-align: center;
-            padding: 60px 20px;
-        }
-        .cta a {
-            display: inline-block;
-            margin-top: 20px;
-            background: #ffffff;
-            color: #2c5364;
-            padding: 14px 28px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #203a43, #2c5364);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
 
-        footer {
-            background: #0f2027;
-            color: #bbb;
-            text-align: center;
-            padding: 25px 10px;
-            font-size: 14px;
-        }
-        footer a {
-            color: #bbb;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* CONTENT */
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #0f2027;
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    }
+
+    .highlight {
+      background: #eef4f8;
+      border-left: 6px solid #2c5364;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* CTA */
+    .cta {
+      background: #2c5364;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 20px;
+      background: white;
+      color: #2c5364;
+      padding: 14px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #0f2027;
+      color: #bbb;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #bbb;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ludo-wordo.html">Ludo Wordo</a></li>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms-of-service.html">Terms of Service</a></li>
-        <li><a href="account-deletion.html">Account Deletion</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-
 <header>
-    <h1>Ludo Wordo</h1>
-    <p>
-        Ludo Wordo is an educational, word-based board game that combines
-        classic Ludo-style gameplay with strategy-driven vocabulary learning.
-    </p>
+  <div class="nav-container">
+    <div class="logo">Dhanadhipati Technologies LLP</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ludo-wordo.html">Ludo Wordo</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="account-deletion.html">Account Deletion</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
+<div class="hero">
+  <h1>Ludo Wordo</h1>
+  <p>
+    Ludo Wordo is an educational word-based game that combines classic Ludo gameplay
+    with vocabulary learning, strategy, and competition.
+  </p>
+</div>
+
 <section>
-    <h2>What Is Ludo Wordo?</h2>
-    <div class="card">
-        <p>
-            Ludo Wordo transforms a familiar board-game experience into something
-            smarter and more engaging.
-        </p>
-        <p>
-            Players move pawns across a board filled with alphabets, collect the
-            right letters, and use them to complete a single target word.
-            The first player to complete the word wins the match.
-        </p>
-        <p>
-            It’s not about speed alone.  
-            It’s not about memorization.  
-            It’s about **strategy, positioning, and smart choices**.
-        </p>
-    </div>
+  <h2>What Exactly Is Ludo Wordo?</h2>
+  <div class="card">
+    <p>
+      <strong>Ludo Wordo</strong> is an innovative, strategy-based board game where players
+      collect alphabets, move pawns thoughtfully, and complete a target word to win.
+    </p>
+    <p>
+      It is not about racing. It is not about memorization.
+      It is about smart movement, sharp decisions, and outplaying opponents.
+    </p>
+    <p>
+      Every move can give you an alphabet.<br>
+      Every alphabet can open new possibilities.<br>
+      The right word ends the game.
+    </p>
+  </div>
 </section>
 
 <section>
-    <h2>The Core Objective</h2>
-    <div class="card highlight">
-        <ul>
-            <li>Each match begins with one target word</li>
-            <li>Some alphabets in the word are missing</li>
-            <li>Players must identify and collect those alphabets</li>
-            <li>The first player to complete the word wins instantly</li>
-        </ul>
-    </div>
+  <h2>The Core Objective</h2>
+  <div class="card highlight">
+    <ul>
+      <li>Each match begins with one target word</li>
+      <li>Some alphabets of the word are missing</li>
+      <li>Players must identify and collect the missing alphabets</li>
+      <li>The first player to complete the word wins instantly</li>
+    </ul>
+  </div>
 </section>
 
 <section>
-    <h2>How the Game Is Played</h2>
-    <div class="card">
-        <h3>Pawns & Movement</h3>
-        <ul>
-            <li>Players move pawns based on the number shown on dice rolls</li>
-            <li>The movement path is filled with alphabets</li>
-            <li>There is no finish point — pawns keep moving until the word is completed</li>
-        </ul>
+  <h2>How the Gameplay Works</h2>
+  <div class="card">
+    <h3>Pawns and Movement</h3>
+    <ul>
+      <li>Players move pawns based on the number shown on dice rolls</li>
+      <li>The entire movement path is filled with alphabets</li>
+      <li>There is no finish point — the game continues until the word is completed</li>
+    </ul>
 
-        <h3>Collecting Alphabets</h3>
-        <ul>
-            <li>Landing on a cell allows the player to collect that alphabet</li>
-            <li>Collected alphabets are stored and used to complete the target word</li>
-            <li>Choosing the right path becomes a strategic decision</li>
-        </ul>
+    <h3>Collecting Alphabets</h3>
+    <ul>
+      <li>Landing on a cell allows the player to collect that alphabet</li>
+      <li>Collected alphabets are used to complete the target word</li>
+      <li>Strategic movement is key to winning faster</li>
+    </ul>
 
-        <h3>Pawn Battles</h3>
-        <ul>
-            <li>If a player kills an opponent’s pawn</li>
-            <li>The attacking player can collect one alphabet from the opponent</li>
-            <li>This adds tactical depth and competitive tension</li>
-        </ul>
+    <h3>Pawn Battles</h3>
+    <ul>
+      <li>If a player kills an opponent’s pawn</li>
+      <li>The attacking player can collect one alphabet from the opponent</li>
+      <li>This adds tactical depth and direct competition</li>
+    </ul>
 
-        <h3>Clues</h3>
-        <ul>
-            <li>Meaning-based clues help players understand the word</li>
-            <li>Pronunciation clues guide players without revealing the answer</li>
-        </ul>
-    </div>
+    <h3>Clues</h3>
+    <ul>
+      <li>Meaning-based clues help players identify the word</li>
+      <li>Pronunciation-based clues are available when needed</li>
+    </ul>
+  </div>
 </section>
 
 <section>
-    <h2>Multiplayer Experience</h2>
-    <div class="card">
-        <ul>
-            <li>Real-time online multiplayer</li>
-            <li>Private game rooms to play with friends</li>
-            <li>Room-based invitations</li>
-            <li>2-player and 4-player matches</li>
-        </ul>
-    </div>
+  <h2>Multiplayer & Game Modes</h2>
+  <div class="card">
+    <ul>
+      <li>Real-time multiplayer with players online</li>
+      <li>Create private game rooms and invite friends</li>
+      <li>Play 2-player or 4-player matches</li>
+    </ul>
+  </div>
 </section>
 
 <section>
-    <h2>Rewards & Progression</h2>
-    <div class="card">
-        <h3>Coins & Entry Fees</h3>
-        <p>
-            Each match requires an entry fee paid using coins.
-            Winning games rewards players with more coins.
-        </p>
+  <h2>Rewards & In-Game Systems</h2>
+  <div class="card">
+    <h3>Coins & Entry Fees</h3>
+    <p>
+      Each match requires an entry fee paid using coins. Winning games rewards players
+      with more coins.
+    </p>
 
-        <h3>Wheel & Daily Rewards</h3>
-        <p>
-            Players can earn rewards by spinning the wheel and
-            by claiming daily rewards for regular play.
-        </p>
+    <h3>Wheel & Daily Rewards</h3>
+    <p>
+      Players can earn rewards by <strong>spinning the wheel</strong> and by claiming
+      daily rewards for regular play.
+    </p>
 
-        <h3>Magic Boxes</h3>
-        <p>
-            Magic boxes offer surprise gifts, including special cards
-            that may unlock additional clues during gameplay.
-        </p>
-    </div>
+    <h3>Magic Boxes</h3>
+    <p>
+      Magic boxes contain surprise gifts. Unboxing them may unlock special cards
+      that help players access additional clues during gameplay.
+    </p>
+  </div>
 </section>
 
 <section>
-    <h2>Leaderboards & Recognition</h2>
-    <div class="card">
-        <ul>
-            <li>Global leaderboards</li>
-            <li>Weekly, monthly, and seasonal rankings</li>
-            <li>Exciting prizes for top-performing players</li>
-        </ul>
-    </div>
+  <h2>Leaderboards & Progress</h2>
+  <div class="card">
+    <ul>
+      <li>Global leaderboards</li>
+      <li>Weekly, monthly, and seasonal rankings</li>
+      <li>Exciting prizes for top-performing players</li>
+    </ul>
+  </div>
 </section>
 
 <section>
-    <h2>House of Words</h2>
-    <div class="card highlight">
-        <p>
-            Every time a player wins a match, the target word from that game is added
-            to their <strong>House of Words</strong>.
-        </p>
-        <p>
-            Players can revisit these words anytime and strengthen their understanding
-            at their own pace.
-        </p>
-    </div>
+  <h2>House of Words</h2>
+  <div class="card highlight">
+    <p>
+      Every time a player wins a match, the word from that game is added to their
+      <strong>House of Words</strong>.
+    </p>
+    <p>
+      Players can revisit these words anytime and learn from their victories.
+    </p>
+  </div>
 </section>
 
 <section>
-    <h2>Friends & Referrals</h2>
-    <div class="card">
-        <ul>
-            <li>Add friends by entering their username</li>
-            <li>Send and accept friend requests</li>
-            <li>Refer friends and grow the Ludo Wordo community</li>
-        </ul>
-    </div>
+  <h2>Friends & Referrals</h2>
+  <div class="card">
+    <ul>
+      <li>Add friends by entering their username</li>
+      <li>Send and accept friend requests</li>
+      <li>Invite friends using the referral feature</li>
+    </ul>
+  </div>
 </section>
 
 <div class="cta">
-    <h2>Product Status</h2>
-    <p>
-        Ludo Wordo is currently under active development.
-        If you’re curious to play before release or test the game,
-        register your interest below.
-    </p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwcYjzqlx4xcOitgDVKhGmDW1f4nqvG6I1_4FgHYXyMVaWjg/viewform?usp=preview" target="_blank">
-        Join Early Access
-    </a>
+  <h2>Product Status</h2>
+  <p>
+    Ludo Wordo is currently under active development.
+    Curious to play before release or test the game?
+  </p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdwcYjzqlx4xcOitgDVKhGmDW1f4nqvG6I1_4FgHYXyMVaWjg/viewform?usp=preview" target="_blank">
+    Join Early Access
+  </a>
 </div>
 
 <footer>
-    © 2025 Dhanadhipati Technologies LLP |
-    <a href="privacy-policy.html">Privacy Policy</a> |
-    <a href="terms-of-service.html">Terms</a>
+  © 2025 Dhanadhipati Technologies LLP |
+  <a href="privacy-policy.html">Privacy Policy</a> |
+  <a href="terms-of-service.html">Terms</a>
 </footer>
 
 </body>
