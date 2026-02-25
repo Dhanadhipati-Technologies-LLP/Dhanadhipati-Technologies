@@ -15,7 +15,6 @@
             background-color: #f5f7fb;
         }
 
-        /* HEADER */
         header {
             background-color: #1f2933;
             color: #ffffff;
@@ -36,7 +35,6 @@
             color: #cbd5e1;
         }
 
-        /* NAVIGATION */
         nav {
             margin-top: 30px;
         }
@@ -63,7 +61,6 @@
             text-decoration: underline;
         }
 
-        /* SECTIONS */
         section {
             max-width: 1100px;
             margin: 60px auto;
@@ -89,7 +86,6 @@
             box-shadow: 0 8px 20px rgba(0,0,0,0.06);
         }
 
-        /* ALTERNATIVE SECTIONS ONLY */
         .highlight {
             background: #f0f4f8;
             border-left: 5px solid #2563eb;
@@ -104,7 +100,6 @@
             margin-bottom: 8px;
         }
 
-        /* CTA */
         .cta {
             background-color: #1f2933;
             color: #ffffff;
@@ -127,7 +122,6 @@
             background-color: #1e40af;
         }
 
-        /* FOOTER */
         footer {
             background-color: #1f2933;
             color: #9ca3af;
@@ -175,11 +169,10 @@
             <strong>Ludo Wordo</strong> is an innovative, strategy-based board game where players
             collect alphabets, move pawns intelligently, and complete a target word to win the match.
         </p>
-
         <ul>
             <li>It is not about racing or memorization, but about strategy and smart positioning</li>
             <li>Every move allows players to collect alphabets placed across the Ludo path</li>
-            <li>Collected alphabets change available options and influence gameplay decisions</li>
+            <li>Opponents’ alphabets influence your strategy</li>
             <li>The first player to collect the correct alphabets and complete the word wins</li>
         </ul>
     </div>
@@ -200,6 +193,7 @@
 <section>
     <h2>How the Gameplay Works</h2>
     <div class="card">
+
         <h3>Pawns and Movement</h3>
         <ul>
             <li>Players move pawns based on the number shown on dice rolls</li>
@@ -210,21 +204,36 @@
         <h3>Collecting Alphabets</h3>
         <ul>
             <li>Landing on each square cell on the Ludo path allows the player to collect that alphabet</li>
-            <li>Collected alphabets are visible in the inventory page</li>
-            <li>Collected alphabets are used to complete the target word</li>
-            <li>Collecting the correct alphabets will win the game</li>
+            <li>Collected alphabets are stored in a dedicated Alphabet Collection page</li>
+        </ul>
+
+        <h3>Viewing Your Alphabet Collection</h3>
+        <p>
+            Tap the big center button on the Ludo board (the home area in classic Ludo) to open the Alphabet Collection page.
+        </p>
+        <ul>
+            <li>Top section shows the target word with missing alphabets</li>
+            <li>Middle section shows your collected alphabets</li>
+            <li>Bottom section shows opponents’ collected alphabets</li>
+            <li>Use this page anytime to plan strategy and target opponents</li>
+        </ul>
+
+        <h3>Drag and Place System</h3>
+        <ul>
+            <li>Drag collected alphabets to the correct missing position in the word</li>
+            <li>If correct, it locks into place and updates for all players</li>
+            <li>If incorrect, it returns back to the collection set</li>
         </ul>
 
         <h3>Pawn Battles</h3>
         <ul>
-            <li>If a player kills an opponent’s pawn, one alphabet can be collected from that opponent</li>
-            <li>This allows players to block opponents and speed up their own progress</li>
+            <li>Killing an opponent’s pawn allows you to collect one alphabet from them</li>
+            <li>Targeted attacks can directly change the outcome of the match</li>
         </ul>
 
         <h3>Clues</h3>
         <p>
-            When a player is unable to guess the word correctly, clues are available.
-            These include meanings and pronunciation guidance to help without revealing the answer.
+            When unable to guess the word, clues are available.
         </p>
         <ul>
             <li>Meaning-based clues</li>
@@ -253,14 +262,30 @@
 
         <h3>Spin Wheel & Daily Rewards</h3>
         <ul>
-            <li>Players can spin the wheel to gain rewards when they run out of coins</li>
-            <li>Daily logins are rewarded to encourage regular play</li>
+            <li>Spin the wheel to gain rewards when coins run out</li>
+            <li>Daily logins are rewarded</li>
         </ul>
 
         <h3>Magic Boxes</h3>
         <ul>
-            <li>Magic boxes provide surprise gifts</li>
-            <li>These gifts may include special cards that unlock clues</li>
+            <li>Provide surprise gifts</li>
+            <li>May include special cards that unlock clues</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>7 Words a Week – Root-Based Learning</h2>
+    <div class="card">
+        <p>
+            Every week, players receive 7 connected words built around one root word.
+        </p>
+        <ul>
+            <li>Day 1 introduces the root word and the first weekly word</li>
+            <li>Each of the next 6 days reveals one new word</li>
+            <li>All 7 words are connected to the same root</li>
+            <li>Each word includes meaning, memory trick, example, part of speech, synonyms, antonyms, and grammar rules</li>
+            <li>Understanding the root helps remember all 7 words easily</li>
         </ul>
     </div>
 </section>
@@ -280,9 +305,9 @@
     <h2>House of Words</h2>
     <div class="card">
         <ul>
-            <li>Every winning game adds its word to the player’s House of Words</li>
-            <li>This becomes a personal word collection</li>
-            <li>Players can revisit and learn these words anytime</li>
+            <li>Every winning game adds its word to the House of Words</li>
+            <li>Build a personal vocabulary collection</li>
+            <li>Revisit and learn anytime</li>
         </ul>
     </div>
 </section>
@@ -291,7 +316,7 @@
     <h2>Friends & Referrals</h2>
     <div class="card highlight">
         <ul>
-            <li>Add friends by entering their username</li>
+            <li>Add friends by username</li>
             <li>Send and accept friend requests</li>
             <li>Refer friends and grow the community</li>
         </ul>
