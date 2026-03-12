@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -98,10 +97,18 @@ flex-direction:row-reverse;
 
 .feature img{
 width:260px;
-height:460px;
-object-fit:cover;
+max-height:460px;
+object-fit:contain;
 border-radius:14px;
 box-shadow:0 12px 28px rgba(0,0,0,0.25);
+background:white;
+}
+
+.logo-img{
+width:260px;
+height:auto;
+object-fit:contain;
+box-shadow:none;
 }
 
 .feature-text{
@@ -191,7 +198,7 @@ Ludo Wordo is an educational word-based game that combines classic Ludo gameplay
 
 <div class="card feature">
 
-<img src="assets/logo.png">
+<img src="assets/logo.png" class="logo-img">
 
 <div class="feature-text">
 
@@ -256,50 +263,7 @@ Ludo Wordo is an innovative, strategy-based board game where players collect alp
 
 <section>
 
-<h2>Collecting Alphabets</h2>
-
-<div class="card feature reverse">
-
-<img src="assets/gameplay.jpg">
-
-<div class="feature-text">
-
-<p>
-Landing on each square cell on the Ludo path allows the player to collect that alphabet.
-Collected alphabets are stored in a dedicated Alphabet Collection page.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section>
-
-<h2>Opening the Alphabet Collection Page</h2>
-
-<div class="card feature">
-
-<img src="assets/taphere.jpg">
-
-<div class="feature-text">
-
-<p>
-Tap the big center button on the Ludo board (the home area in classic Ludo) to open the Alphabet Collection page.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section>
-
-<h2>Viewing Your Alphabet Collection</h2>
+<h2>Alphabet Collection & Strategy</h2>
 
 <div class="card feature reverse">
 
@@ -307,25 +271,22 @@ Tap the big center button on the Ludo board (the home area in classic Ludo) to o
 
 <div class="feature-text">
 
+<h3>Collecting Alphabets</h3>
+
+<p>
+Landing on each square cell on the Ludo path allows the player to collect that alphabet.
+</p>
+
+<h3>Viewing Your Alphabet Collection</h3>
+
 <ul>
+<li>Tap the center button on the Ludo board to open the Alphabet Collection page</li>
 <li>Top section shows the target word with missing alphabets</li>
 <li>Middle section shows your collected alphabets</li>
 <li>Bottom section shows opponents’ collected alphabets</li>
-<li>Use this page anytime to plan strategy and target opponents</li>
 </ul>
 
-</div>
-
-</div>
-
-</section>
-
-
-<section>
-
-<h2>Drag and Place System</h2>
-
-<div class="card">
+<h3>Drag and Place System</h3>
 
 <ul>
 <li>Drag collected alphabets to the correct missing position in the word</li>
@@ -333,21 +294,14 @@ Tap the big center button on the Ludo board (the home area in classic Ludo) to o
 <li>If incorrect, it returns back to the collection set</li>
 </ul>
 
-</div>
-
-</section>
-
-
-<section>
-
-<h2>Pawn Battles</h2>
-
-<div class="card">
+<h3>Pawn Battles</h3>
 
 <ul>
 <li>Killing an opponent’s pawn allows you to collect one alphabet from them</li>
 <li>Targeted attacks can directly change the outcome of the match</li>
 </ul>
+
+</div>
 
 </div>
 
@@ -365,8 +319,7 @@ Tap the big center button on the Ludo board (the home area in classic Ludo) to o
 <div class="feature-text">
 
 <p>
-When unable to guess the word, clues are available during gameplay.
-These clues are unlocked using special clue cards while playing the game.
+When unable to guess the word, clues are available during gameplay. These clues are unlocked using special clue cards while playing the game.
 </p>
 
 <ul>
@@ -403,33 +356,9 @@ These clues are unlocked using special clue cards while playing the game.
 
 <section>
 
-<h2>Rewards & In-Game Systems</h2>
-
-<div class="card feature">
-
-<img src="assets/menu.jpg">
-
-<div class="feature-text">
-
-<h3>Coins & Entry Fees</h3>
-
-<p>
-Each match requires an entry fee paid using coins.
-Winning matches earns more coins.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section>
-
 <h2>Spin Wheel & Daily Rewards</h2>
 
-<div class="card feature reverse">
+<div class="card feature">
 
 <img src="assets/spin.jpg">
 
@@ -467,7 +396,7 @@ Winning matches earns more coins.
 
 <h2>7 Words a Week – Root-Based Learning</h2>
 
-<div class="card feature">
+<div class="card feature reverse">
 
 <img src="assets/rootword.jpg">
 
@@ -496,7 +425,7 @@ Every week players receive 7 connected words built around one root word.
 
 <h2>Leaderboards & Progress</h2>
 
-<div class="card feature highlight">
+<div class="card feature">
 
 <img src="assets/leaderboard.jpg">
 
