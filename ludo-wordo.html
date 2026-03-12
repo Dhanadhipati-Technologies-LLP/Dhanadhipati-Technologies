@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,8 +17,8 @@ body{
 margin:0;
 font-family:'Poppins', Arial, sans-serif;
 line-height:1.7;
-color:#111827;
 background:#f5f7fb;
+color:#111827;
 }
 
 header{
@@ -28,14 +29,13 @@ text-align:center;
 }
 
 header h1{
-font-size:42px;
+font-size:40px;
 margin-bottom:10px;
 }
 
 header p{
-max-width:900px;
+max-width:850px;
 margin:auto;
-font-size:18px;
 color:#cbd5e1;
 }
 
@@ -48,14 +48,13 @@ list-style:none;
 padding:0;
 display:flex;
 justify-content:center;
-flex-wrap:wrap;
 gap:30px;
+flex-wrap:wrap;
 }
 
 nav ul li a{
 color:white;
 text-decoration:none;
-font-weight:500;
 }
 
 nav ul li a:hover{
@@ -69,13 +68,8 @@ padding:0 20px;
 }
 
 h2{
-font-size:26px;
-margin-bottom:15px;
 color:#1f2933;
-}
-
-h3{
-margin-top:20px;
+margin-bottom:15px;
 }
 
 .card{
@@ -88,10 +82,6 @@ box-shadow:0 8px 20px rgba(0,0,0,0.06);
 .highlight{
 background:#f0f4f8;
 border-left:5px solid #2563eb;
-}
-
-ul{
-padding-left:20px;
 }
 
 .feature{
@@ -111,6 +101,27 @@ box-shadow:0 10px 25px rgba(0,0,0,0.25);
 flex:1;
 }
 
+.arrow-box{
+position:relative;
+display:inline-block;
+}
+
+.arrow-box::after{
+content:"Tap here to open Alphabet Collection";
+position:absolute;
+top:40%;
+left:20%;
+background:#2563eb;
+color:white;
+padding:6px 10px;
+font-size:13px;
+border-radius:6px;
+}
+
+ul{
+padding-left:20px;
+}
+
 .cta{
 background:#1f2933;
 color:white;
@@ -126,11 +137,6 @@ color:white;
 padding:14px 34px;
 border-radius:6px;
 text-decoration:none;
-font-weight:600;
-}
-
-.cta a:hover{
-background:#1e40af;
 }
 
 footer{
@@ -138,7 +144,6 @@ background:#1f2933;
 color:#9ca3af;
 text-align:center;
 padding:30px 10px;
-font-size:14px;
 }
 
 footer a{
@@ -159,20 +164,16 @@ color:white;
 
 <h1>Ludo Wordo</h1>
 
-<p>
-Ludo Wordo is an educational word-based game that combines classic Ludo gameplay with vocabulary learning.
-</p>
+<p>Ludo Wordo is an educational word-based game that combines classic Ludo gameplay with vocabulary learning.</p>
 
 <nav>
 <ul>
-
 <li><a href="index.html">Home</a></li>
 <li><a href="ludo-wordo.html">Ludo Wordo</a></li>
 <li><a href="privacy-policy.html">Privacy Policy</a></li>
 <li><a href="terms-of-service.html">Terms of Service</a></li>
 <li><a href="account-deletion.html">Account Deletion</a></li>
 <li><a href="contact.html">Contact</a></li>
-
 </ul>
 </nav>
 
@@ -185,24 +186,24 @@ Ludo Wordo is an educational word-based game that combines classic Ludo gameplay
 
 <div class="card feature">
 
-<img src="assets/menu.jpg">
+<img src="assets/logo.png">
 
 <div class="feature-text">
 
 <p>
-<strong>Ludo Wordo</strong> is an innovative strategy-based board game where players collect alphabets,
-move pawns intelligently and complete a target word to win the match.
+Ludo Wordo is an innovative, strategy-based board game where players collect alphabets, move pawns intelligently, and complete a target word to win the match.
 </p>
 
 <ul>
-<li>Strategy-based gameplay</li>
-<li>Alphabet collection mechanics</li>
-<li>Word completion challenges</li>
-<li>Educational and competitive gameplay</li>
+<li>It is not about racing or memorization, but about strategy and smart positioning</li>
+<li>Every move allows players to collect alphabets placed across the Ludo path</li>
+<li>Opponents’ alphabets influence your strategy</li>
+<li>The first player to collect the correct alphabets and complete the word wins</li>
 </ul>
 
 </div>
 </div>
+
 </section>
 
 
@@ -213,11 +214,10 @@ move pawns intelligently and complete a target word to win the match.
 <div class="card highlight">
 
 <ul>
-<li>One target word appears at the start of every match</li>
+<li>One target word is shown at the start of each match</li>
 <li>Some alphabets of the word are missing</li>
-<li>Players must collect the missing alphabets</li>
-<li>The first player to complete the word wins</li>
-
+<li>Players must identify and collect the missing alphabets</li>
+<li>The first player to complete the word wins instantly</li>
 </ul>
 
 </div>
@@ -227,7 +227,7 @@ move pawns intelligently and complete a target word to win the match.
 
 <section>
 
-<h2>Core Gameplay</h2>
+<h2>Pawns and Movement</h2>
 
 <div class="card feature">
 
@@ -236,11 +236,37 @@ move pawns intelligently and complete a target word to win the match.
 <div class="feature-text">
 
 <ul>
-<li>Players move pawns based on dice rolls</li>
-<li>The Ludo path contains alphabets</li>
-<li>Landing on squares collects alphabets</li>
-<li>The game continues until a player completes the word</li>
+<li>Players move pawns based on the number shown on dice rolls</li>
+<li>The Ludo game path is filled with alphabets</li>
+<li>There is no finish point — pawns keep moving until the word is completed</li>
 </ul>
+
+</div>
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Collecting Alphabets</h2>
+
+<div class="card">
+
+<div class="feature">
+
+<div class="arrow-box">
+<img src="assets/gameplay.jpg">
+</div>
+
+<div class="feature-text">
+
+<p>
+Landing on each square cell on the Ludo path allows the player to collect that alphabet.
+Collected alphabets are stored in a dedicated Alphabet Collection page.
+</p>
+
+</div>
 
 </div>
 
@@ -251,7 +277,7 @@ move pawns intelligently and complete a target word to win the match.
 
 <section>
 
-<h2>Alphabet Collection</h2>
+<h2>Viewing Your Alphabet Collection</h2>
 
 <div class="card feature">
 
@@ -260,11 +286,10 @@ move pawns intelligently and complete a target word to win the match.
 <div class="feature-text">
 
 <ul>
-<li>Collected alphabets are stored in the Alphabet Collection page</li>
-<li>The top shows the target word</li>
-<li>Your collected alphabets appear in the middle</li>
-<li>Opponents’ alphabets appear below</li>
-<li>Players can strategise using this information</li>
+<li>Top section shows the target word with missing alphabets</li>
+<li>Middle section shows your collected alphabets</li>
+<li>Bottom section shows opponents’ collected alphabets</li>
+<li>Use this page anytime to plan strategy and target opponents</li>
 </ul>
 
 </div>
@@ -276,20 +301,57 @@ move pawns intelligently and complete a target word to win the match.
 
 <section>
 
-<h2>7 Words a Week – Root Based Learning</h2>
+<h2>Drag and Place System</h2>
+
+<div class="card">
+
+<ul>
+<li>Drag collected alphabets to the correct missing position in the word</li>
+<li>If correct, it locks into place and updates for all players</li>
+<li>If incorrect, it returns back to the collection set</li>
+</ul>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Pawn Battles</h2>
+
+<div class="card">
+
+<ul>
+<li>Killing an opponent’s pawn allows you to collect one alphabet from them</li>
+<li>Targeted attacks can directly change the outcome of the match</li>
+</ul>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Clues</h2>
 
 <div class="card feature">
 
-<img src="assets/rootword.jpg">
+<img src="assets/unlock-clue.jpg">
 
 <div class="feature-text">
 
+<p>
+When unable to guess the word, clues are available during gameplay.
+Players can unlock clue cards while playing the game.
+</p>
+
 <ul>
-<li>Every week players learn seven words connected to a root word</li>
-<li>Day 1 introduces the root word and first word</li>
-<li>Six more words appear across the week</li>
-<li>Each word includes meaning, examples and grammar usage</li>
-<li>Understanding the root helps remember all words easily</li>
+<li>One clue card can be obtained per day</li>
+<li>Cards are unlocked by opening mystery boxes</li>
+<li>Meaning-based clues</li>
+<li>Pronunciation-based clues</li>
 </ul>
 
 </div>
@@ -301,7 +363,48 @@ move pawns intelligently and complete a target word to win the match.
 
 <section>
 
-<h2>Spin Wheel Rewards</h2>
+<h2>Multiplayer & Game Modes</h2>
+
+<div class="card">
+
+<ul>
+<li>Real-time multiplayer with online players</li>
+<li>Private game rooms to play with friends</li>
+<li>Room-based invitations</li>
+<li>2-player and 4-player matches</li>
+</ul>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Rewards & In-Game Systems</h2>
+
+<div class="card feature">
+
+<img src="assets/menu.jpg">
+
+<div class="feature-text">
+
+<h3>Coins & Entry Fees</h3>
+
+<p>
+Each match requires an entry fee paid using coins. Winning matches earns more coins.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Spin Wheel & Daily Rewards</h2>
 
 <div class="card feature">
 
@@ -310,9 +413,8 @@ move pawns intelligently and complete a target word to win the match.
 <div class="feature-text">
 
 <ul>
-<li>Spin the wheel when coins run out</li>
-<li>Earn coins and bonuses</li>
-<li>Daily login rewards available</li>
+<li>Spin the wheel to gain rewards when coins run out</li>
+<li>Daily logins are rewarded</li>
 </ul>
 
 </div>
@@ -324,7 +426,52 @@ move pawns intelligently and complete a target word to win the match.
 
 <section>
 
-<h2>Leaderboards</h2>
+<h2>Magic Boxes</h2>
+
+<div class="card">
+
+<ul>
+<li>Provide surprise gifts</li>
+<li>May include special cards that unlock clues</li>
+</ul>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>7 Words a Week – Root-Based Learning</h2>
+
+<div class="card feature">
+
+<img src="assets/rootword.jpg">
+
+<div class="feature-text">
+
+<p>
+Players receive 7 connected words every week built around one root word.
+</p>
+
+<ul>
+<li>Day 1 introduces the root word and the first weekly word</li>
+<li>Each of the next 6 days reveals one new word</li>
+<li>All 7 words are connected to the same root</li>
+<li>Each word includes meaning, memory trick, example, grammar and synonyms</li>
+<li>Players must open daily rewards each day or the cycle resets</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Leaderboards & Progress</h2>
 
 <div class="card feature highlight">
 
@@ -334,8 +481,8 @@ move pawns intelligently and complete a target word to win the match.
 
 <ul>
 <li>Global leaderboards</li>
-<li>Weekly and monthly rankings</li>
-<li>Seasonal rewards for top players</li>
+<li>Weekly, monthly, and seasonal rankings</li>
+<li>Exciting rewards for top players</li>
 </ul>
 
 </div>
@@ -347,21 +494,15 @@ move pawns intelligently and complete a target word to win the match.
 
 <section>
 
-<h2>Mystery Boxes</h2>
+<h2>House of Words</h2>
 
-<div class="card feature">
-
-<img src="assets/mysterybox.jpg">
-
-<div class="feature-text">
+<div class="card">
 
 <ul>
-<li>Unlock surprise rewards</li>
-<li>Get special cards and bonuses</li>
-<li>Enhance gameplay strategy</li>
+<li>Every winning game adds its word to the House of Words</li>
+<li>Build a personal vocabulary collection</li>
+<li>Revisit and learn anytime</li>
 </ul>
-
-</div>
 
 </div>
 
@@ -370,21 +511,15 @@ move pawns intelligently and complete a target word to win the match.
 
 <section>
 
-<h2>Winning the Game</h2>
+<h2>Friends & Referrals</h2>
 
-<div class="card feature">
-
-<img src="assets/winner.jpg">
-
-<div class="feature-text">
+<div class="card">
 
 <ul>
-<li>First player completing the word wins</li>
-<li>Coins and rewards are granted</li>
-<li>Words are added to House of Words</li>
+<li>Add friends by username</li>
+<li>Send and accept friend requests</li>
+<li>Refer friends and grow the community</li>
 </ul>
-
-</div>
 
 </div>
 
@@ -395,10 +530,7 @@ move pawns intelligently and complete a target word to win the match.
 
 <h2>Play Ludo Wordo</h2>
 
-<p>
-Ludo Wordo is now available on Google Play Store.
-Download and start playing today.
-</p>
+<p>Ludo Wordo is now available on the Google Play Store.</p>
 
 <a href="https://play.google.com/store/apps/details?id=com.dhanadhipatitechnologiesllp.ludowordo" target="_blank">
 Download on Google Play
