@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -16,16 +17,16 @@
 body{
 margin:0;
 font-family:'Poppins', Arial, sans-serif;
-line-height:1.7;
 background:#f5f7fb;
 color:#111827;
+line-height:1.7;
 }
 
 header{
 background:#1f2933;
 color:white;
-padding:70px 20px 40px;
 text-align:center;
+padding:70px 20px 40px;
 }
 
 header h1{
@@ -48,7 +49,7 @@ list-style:none;
 padding:0;
 display:flex;
 justify-content:center;
-gap:30px;
+gap:28px;
 flex-wrap:wrap;
 }
 
@@ -63,13 +64,13 @@ color:#60a5fa;
 
 section{
 max-width:1100px;
-margin:60px auto;
+margin:70px auto;
 padding:0 20px;
 }
 
 h2{
 color:#1f2933;
-margin-bottom:15px;
+margin-bottom:18px;
 }
 
 .card{
@@ -86,36 +87,26 @@ border-left:5px solid #2563eb;
 
 .feature{
 display:flex;
-gap:40px;
 align-items:center;
+gap:50px;
 flex-wrap:wrap;
 }
 
+.feature.reverse{
+flex-direction:row-reverse;
+}
+
 .feature img{
-width:320px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.25);
+width:260px;
+height:460px;
+object-fit:cover;
+border-radius:14px;
+box-shadow:0 12px 28px rgba(0,0,0,0.25);
 }
 
 .feature-text{
 flex:1;
-}
-
-.arrow-box{
-position:relative;
-display:inline-block;
-}
-
-.arrow-box::after{
-content:"Tap here to open Alphabet Collection";
-position:absolute;
-top:40%;
-left:20%;
-background:#2563eb;
-color:white;
-padding:6px 10px;
-font-size:13px;
-border-radius:6px;
+min-width:260px;
 }
 
 ul{
@@ -127,6 +118,7 @@ background:#1f2933;
 color:white;
 text-align:center;
 padding:60px 20px;
+margin-top:80px;
 }
 
 .cta a{
@@ -137,6 +129,11 @@ color:white;
 padding:14px 34px;
 border-radius:6px;
 text-decoration:none;
+font-weight:600;
+}
+
+.cta a:hover{
+background:#1e40af;
 }
 
 footer{
@@ -144,6 +141,7 @@ background:#1f2933;
 color:#9ca3af;
 text-align:center;
 padding:30px 10px;
+margin-top:40px;
 }
 
 footer a{
@@ -156,24 +154,31 @@ color:white;
 }
 
 </style>
+
 </head>
 
+
 <body>
+
 
 <header>
 
 <h1>Ludo Wordo</h1>
 
-<p>Ludo Wordo is an educational word-based game that combines classic Ludo gameplay with vocabulary learning.</p>
+<p>
+Ludo Wordo is an educational word-based game that combines classic Ludo gameplay with vocabulary learning.
+</p>
 
 <nav>
 <ul>
+
 <li><a href="index.html">Home</a></li>
 <li><a href="ludo-wordo.html">Ludo Wordo</a></li>
 <li><a href="privacy-policy.html">Privacy Policy</a></li>
 <li><a href="terms-of-service.html">Terms of Service</a></li>
 <li><a href="account-deletion.html">Account Deletion</a></li>
 <li><a href="contact.html">Contact</a></li>
+
 </ul>
 </nav>
 
@@ -202,6 +207,7 @@ Ludo Wordo is an innovative, strategy-based board game where players collect alp
 </ul>
 
 </div>
+
 </div>
 
 </section>
@@ -242,6 +248,7 @@ Ludo Wordo is an innovative, strategy-based board game where players collect alp
 </ul>
 
 </div>
+
 </div>
 
 </section>
@@ -251,13 +258,9 @@ Ludo Wordo is an innovative, strategy-based board game where players collect alp
 
 <h2>Collecting Alphabets</h2>
 
-<div class="card">
+<div class="card feature reverse">
 
-<div class="feature">
-
-<div class="arrow-box">
 <img src="assets/gameplay.jpg">
-</div>
 
 <div class="feature-text">
 
@@ -270,6 +273,25 @@ Collected alphabets are stored in a dedicated Alphabet Collection page.
 
 </div>
 
+</section>
+
+
+<section>
+
+<h2>Opening the Alphabet Collection Page</h2>
+
+<div class="card feature">
+
+<img src="assets/taphere.jpg">
+
+<div class="feature-text">
+
+<p>
+Tap the big center button on the Ludo board (the home area in classic Ludo) to open the Alphabet Collection page.
+</p>
+
+</div>
+
 </div>
 
 </section>
@@ -279,7 +301,7 @@ Collected alphabets are stored in a dedicated Alphabet Collection page.
 
 <h2>Viewing Your Alphabet Collection</h2>
 
-<div class="card feature">
+<div class="card feature reverse">
 
 <img src="assets/collection.jpg">
 
@@ -344,7 +366,7 @@ Collected alphabets are stored in a dedicated Alphabet Collection page.
 
 <p>
 When unable to guess the word, clues are available during gameplay.
-Players can unlock clue cards while playing the game.
+These clues are unlocked using special clue cards while playing the game.
 </p>
 
 <ul>
@@ -392,7 +414,8 @@ Players can unlock clue cards while playing the game.
 <h3>Coins & Entry Fees</h3>
 
 <p>
-Each match requires an entry fee paid using coins. Winning matches earns more coins.
+Each match requires an entry fee paid using coins.
+Winning matches earns more coins.
 </p>
 
 </div>
@@ -406,7 +429,7 @@ Each match requires an entry fee paid using coins. Winning matches earns more co
 
 <h2>Spin Wheel & Daily Rewards</h2>
 
-<div class="card feature">
+<div class="card feature reverse">
 
 <img src="assets/spin.jpg">
 
@@ -451,7 +474,7 @@ Each match requires an entry fee paid using coins. Winning matches earns more co
 <div class="feature-text">
 
 <p>
-Players receive 7 connected words every week built around one root word.
+Every week players receive 7 connected words built around one root word.
 </p>
 
 <ul>
@@ -459,7 +482,7 @@ Players receive 7 connected words every week built around one root word.
 <li>Each of the next 6 days reveals one new word</li>
 <li>All 7 words are connected to the same root</li>
 <li>Each word includes meaning, memory trick, example, grammar and synonyms</li>
-<li>Players must open daily rewards each day or the cycle resets</li>
+<li>Players must open daily rewards every day or the cycle resets</li>
 </ul>
 
 </div>
@@ -530,7 +553,9 @@ Players receive 7 connected words every week built around one root word.
 
 <h2>Play Ludo Wordo</h2>
 
-<p>Ludo Wordo is now available on the Google Play Store.</p>
+<p>
+Ludo Wordo is now available on the Google Play Store.
+</p>
 
 <a href="https://play.google.com/store/apps/details?id=com.dhanadhipatitechnologiesllp.ludowordo" target="_blank">
 Download on Google Play
@@ -550,6 +575,7 @@ iOS version coming soon on the Apple App Store.
 <a href="terms-of-service.html">Terms</a>
 
 </footer>
+
 
 </body>
 </html>
